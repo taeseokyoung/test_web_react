@@ -1,5 +1,4 @@
 import './App.css';
-import "slick-carousel/slick/slick.css";
 import TopBanner from './component/TopBanner';
 import Header from './component/Header';
 import MainVisual from './component/MainVisual';
