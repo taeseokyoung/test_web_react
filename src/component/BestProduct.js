@@ -3,11 +3,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
 const TAB = [
-    { id: 1, tit: "컬렉션" },
-    { id: 2, tit: "액티비티" },
-    { id: 3, tit: "여성" },
-    { id: 4, tit: "남성" },
-    { id: 5, tit: "액세서리" },
+    { id: 1, tit: "컬렉션", link: "/" },
+    { id: 2, tit: "액티비티", link: "/" },
+    { id: 3, tit: "여성", link: "/" },
+    { id: 4, tit: "남성", link: "/" },
+    { id: 5, tit: "액세서리", link: "/" },
 ]
 
 const BSLIDE = [
@@ -57,7 +57,11 @@ const BestProduct = () => {
                                     <div className="box">
                                         <ul className="color">
                                             {
-
+                                                bslide.color.map((colorchip, idx) => {
+                                                    return (
+                                                        <li style={{ background: `${colorchip}` }}></li>
+                                                    )
+                                                })
                                             }
                                         </ul>
                                         <strong className='product'>{bslide.product}</strong>
@@ -73,7 +77,7 @@ const BestProduct = () => {
                     </div> */}
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

@@ -213,6 +213,10 @@
   font-weight: 300;
 }
 
+.Header .sNav>li a {
+  display: block;
+
+}
 
 .Header h1 {}
 
@@ -540,4 +544,18 @@
   display: inline-block;
   font-size: 15px;
   text-align: left;
+}
+
+.tabslide .box .color>li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px 5px 0 0;
+  /* background: #333; */
+
+}
+
+.tabslide .box .color>li:hover {
+  border: 2px solid #d41935;
 }
