@@ -158,67 +158,65 @@
 
 }
 
-.Header .Gnb,
-.Header .top_service {
+.Gnb,
+.top_service {
   width: 600px;
   z-index: 999;
 }
 
-.Header .top_search {
+.top_search {
   margin: 0 0 0 auto;
 }
 
-.Header .Gnb>ul {
+.Gnb>ul {
   display: flex;
   gap: 40px;
   text-align: center;
 }
 
-.Header .Gnb>ul>li {
+.Gnb>ul>li {
   position: relative;
   font-size: 15px;
   font-weight: 500;
 }
 
-.Header .Gnb>ul>li>a {
+.Gnb>ul>li>a {
   display: block;
 }
 
 
-.Header .Gnb>ul>li .sNav {
+.Gnb>ul>li .sNav {
   display: none;
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 140px;
-
   line-height: 2;
-  border: 1px solid rgba(0, 0, 0, 0.2);
   background: #f7f7f7;
 }
 
-.Header .Gnb>ul>li .sNav>li {
+.Gnb>ul>li .sNav>li {
   font-size: 15px;
   padding: 5px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.Header .Gnb>ul>li .sNav>li~li {
+.Gnb>ul>li .sNav>li~li {
   border-top: 1px solid rgba(212, 25, 53, 0.3);
 }
 
-.Header .mNav>li:hover .sNav {
+.mNav>li:hover .sNav {
   display: block;
   font-size: 15px;
   font-weight: 300;
 }
 
-.Header .sNav>li a {
+.sNav>li a {
   display: block;
-
 }
 
-.Header h1 {}
+h1 {}
 
 .Header h1 a {
   display: inline-block;

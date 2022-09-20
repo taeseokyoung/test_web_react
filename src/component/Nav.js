@@ -2,21 +2,19 @@ const NavData = [
     {
         navid: 1, title: "신상품", alink: "#!",
         submenu: [
-            { stitle: "컬렉션", slink: "#!" },
-            { stitle: "액티비티", slink: "#!" },
-            { stitle: "상의", slink: "#!" },
-            { stitle: "하의", slink: "#!" },
-
+            // { stitle: "컬렉션", slink: "#!" },
+            // { stitle: "액티비티", slink: "#!" },
+            // { stitle: "상의", slink: "#!" },
+            // { stitle: "하의", slink: "#!" },
         ]
     },
     {
         navid: 2, title: "베스트", alink: "#!",
         submenu: [
-            { stitle: "컬렉션", slink: "#!" },
-            { stitle: "액티비티", slink: "#!" },
-            { stitle: "상의", slink: "#!" },
-            { stitle: "하의", slink: "#!" },
-
+            // { stitle: "컬렉션", slink: "#!" },
+            // { stitle: "액티비티", slink: "#!" },
+            // { stitle: "상의", slink: "#!" },
+            // { stitle: "하의", slink: "#!" },
         ]
     },
     {

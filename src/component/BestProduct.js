@@ -3,22 +3,19 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
 const TAB = [
-    { id: 1, tit: "컬렉션", link: "/" },
-    { id: 2, tit: "액티비티", link: "/" },
-    { id: 3, tit: "여성", link: "/" },
-    { id: 4, tit: "남성", link: "/" },
-    { id: 5, tit: "액세서리", link: "/" },
+    { id: 1, tit: "여성", link: "/" },
+    { id: 2, tit: "남성", link: "/" },
 ]
 
 const BSLIDE = [
-    { id: 1, product: "Nulux 하프집 롱슬리브 셔츠", price: "138,000원", color: ["#222222", "#eaeaec"], link: "/" },
-    { id: 2, product: "코트 라이벌 하이라이즈 스커트 15", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#d6d6e5", "#f8e8e6", "#00223f", "#a6005f", "#cbe89a"], link: "/", },
-    { id: 3, product: "퀵 드라잉 숏슬리브 폴로 셔츠", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#d6d6e5", "#cbe89a"], link: "/", },
-    { id: 4, product: "플리티드 라인드 하이라이즈 테니스 스커트", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#a4999a", "#444144", "#d8d2b2", "#e78d85", "#dbb1ad", "#e1b3b9", "#acacac", "#bbdecd"], link: "/", },
-    { id: 5, product: "인비고레이트 트레이닝 탱크탑", price: "93,000원", color: ["#222222", "#eaeaec"], link: "/", },
-    { id: 6, product: "패스트 앤 프리 하이라이즈 쇼츠 6", price: "93,000원", color: ["#222222", "#eaeaec"], link: "/", },
-    { id: 7, product: "모달 실크 요가 탱크탑", price: "62,000원 - 78,000원", color: ["#222222", "#eaeaec"], link: "/", },
-    { id: 8, product: "라이크 어 클라우드 브라", price: "55,000원 - 93,000원", color: ["#222222", "#eaeaec"], link: "/", },
+    { id: 1, product: "Nulux 하프집 롱슬리브 셔츠", price: "138,000원", color: ["#222222", "#eaeaec"], dec: ["Nulux™", "고강도", "트레이닝"], link: "/" },
+    { id: 2, product: "코트 라이벌 하이라이즈 스커트 15", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#d6d6e5", "#f8e8e6", "#00223f", "#a6005f", "#cbe89a"], dec: ["Swift™", "테니스"], link: "/", },
+    { id: 3, product: "퀵 드라잉 숏슬리브 폴로 셔츠", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#d6d6e5", "#cbe89a"], dec: ["클래식", "골프", "테니스"], link: "/", },
+    { id: 4, product: "플리티드 라인드 하이라이즈 테니스 스커트", price: "65,000원 - 93,000원", color: ["#222222", "#eaeaec", "#a4999a", "#444144", "#d8d2b2", "#e78d85", "#dbb1ad", "#e1b3b9", "#acacac", "#bbdecd"], dec: ["Swift™", "테니스"], link: "/", },
+    { id: 5, product: "인비고레이트 트레이닝 탱크탑", price: "93,000원", color: ["#222222", "#eaeaec"], dec: ["Everlux™", "고강도", "트레이닝"], link: "/", },
+    { id: 6, product: "패스트 앤 프리 하이라이즈 쇼츠 6", price: "93,000원", color: ["#222222", "#eaeaec"], dec: ["Nulux™", "초경량", "러닝"], link: "/", },
+    { id: 7, product: "모달 실크 요가 탱크탑", price: "62,000원 - 78,000원", color: ["#222222", "#eaeaec"], dec: ["요가"], link: "/", },
+    { id: 8, product: "라이크 어 클라우드 브라", price: "55,000원 - 93,000원", color: ["#222222", "#eaeaec"], dec: ["요가"], link: "/", },
 ]
 
 const BestProduct = () => {
@@ -66,6 +63,7 @@ const BestProduct = () => {
                                         </ul>
                                         <strong className='product'>{bslide.product}</strong>
                                         <div className="price">{bslide.price}</div>
+                                        <div className='dec'>{bslide.dec}</div>
                                     </div>
                                 </figure>
                             )
