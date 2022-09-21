@@ -573,7 +573,7 @@ h1 {}
 
 .Footer .newsletter {
   text-align: center;
-  padding: 40px 0;
+  padding: 50px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -596,8 +596,13 @@ h1 {}
   border: inherit;
 }
 
-.Footer .footmenu {
-  padding: 40px 0;
+.newsletter button:hover {
+  background: #d41935;
+  border: inherit;
+}
+
+.Footer .top {
+  padding: 70px 0 100px 0;
 }
 
 .footmenu .inner {
@@ -605,20 +610,111 @@ h1 {}
   justify-content: space-between;
 }
 
-.footmenu .left {
-  display: flex;
-  gap: 50px;
-  line-height: 1.6;
+.footmenu .slogo {
+  width: 60px;
+  height: 60px;
+  background: url(../public/assets/images/logo_s.png) no-repeat center center/cover;
+  font-size: 0;
+  margin: 0 10px 0 0;
 }
 
-.footmenu .left>li>a {
+.footmenu .middle {
+  display: flex;
+  gap: 80px;
+}
+
+.footmenu .mid {
+  display: flex;
+  gap: 80px;
+  line-height: 2;
+}
+
+.footmenu .mid>li>a {
   display: block;
   margin: 0 0 10px 0;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.footmenu .left .fstit {
+.footmenu .mid .fstit {
   font-size: 15px;
   font-weight: 400;
+}
+
+.footmenu .important {
+   font-weight: 600;
+   line-height: 2.2;
+}
+
+.footmenu .social a {
+  display: inline-block;
+  margin: 0 0 0 10px ;
+  padding: 10px;
+  background: #333;
+  /* border: 1px solid #333; */
+  border-radius: 50%;
+}
+
+.footmenu .social i {
+  font-size: 23px;
+  /* color: #333; */
+  color: #fff;
+}
+
+.footmenu .bottom .up {
+  background: #f7f7f7;
+  line-height: 60px;
+}
+
+.footmenu .bottom .up .left {
+  display: flex;
+  gap: 20px;
+}
+
+.footmenu .bottom .up .left span {
+  font-weight: 600;
+  margin: 0 0 0 10px;
+}
+
+.footmenu .bottom .copyright {
+  font-size: 14px;
+}
+
+.footmenu .bottom .down {
+height: 100px;
+}
+
+.footmenu .bottom .down>ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footmenu .bottom .down>ul li {
+  display: block;
+  word-break: keep-all;
+  /* white-space: nowrap; */
+  font-size: 14px;
+  padding: 30px 0;
+}
+
+.footmenu .bottom .down>ul>li~li::before {
+ content: "/";
+}
+
+.NewProducts .inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.NewProducts .inner .left {
+  width: 300px;
+  height: 100vh;
+  background: #f00;
+}
+
+.NewProducts .inner .right{
+  width: 1100px;
+  height: 100vh;
+  background: #333;
 }

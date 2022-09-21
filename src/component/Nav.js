@@ -1,6 +1,8 @@
+import { Link, NavLink } from 'react-router-dom'
+
 const NavData = [
     {
-        navid: 1, title: "신제품", alink: "#!",
+        navid: 1, title: "신제품", alink: "/new",
         submenu: [
             // { sid: 1, stitle: "컬렉션", slink: "#!" },
             // { sid: 2, stitle: "액티비티", slink: "#!" },
@@ -57,21 +59,23 @@ const Nav = () => {
             <ul className="mNav">
                 {
                     NavData.map(
-                        (navlink, idx) => (<li key={navlink.navid}>
-                            <a href={navlink.alink}>{navlink.title}</a>
-                            <ul className="sNav">
-                                {
-                                    navlink.submenu.map(
-                                        smenu => (<li key={navlink.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
-                                    )
-                                }
-                            </ul>
+                        (el, idx) => (<li key={el.navid}>
+                            <NavLink to={el.alink}>
+                                {el.title}
+                                <ul className="sNav">
+                                    {
+                                        el.submenu.map(
+                                            smenu => (<li key={el.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
+                                        )
+                                    }
+                                </ul>
+                            </NavLink>
                         </li>)
                     )
                 }
 
             </ul>
-        </nav>
+        </nav >
     )
 }
 

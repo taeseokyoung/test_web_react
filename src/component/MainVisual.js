@@ -22,18 +22,16 @@ const MainVisual = () => {
         // fade: true,
     }
     return (
-        <section className='MainVisual'>
+        <section className="MainVisual">
             <Slider  {...setting} ref={mainSlide}>
                 {
                     SLIDE.map((slide, idx) => {
                         return (
-                            <figure key={slide.id} className={'itm0' + slide.id + (idx === IDX ? ' on' : '')}>
+                            <figure key={slide.id} className={"itm0" + slide.id + (idx === IDX ? " on" : "")}>
                                 <div className="inner">
-                                    <div className='des'>{slide.des}</div>
-                                    <p className='tit'>{slide.title}</p>
-                                    <a href={slide.link} target="_blank" className='cbtn'>
-                                        VIEW MORE
-                                    </a>
+                                    <div className="des">{slide.des}</div>
+                                    <p className="tit">{slide.title}</p>
+                                    <a href={slide.link} className="cbtn" target="_blank" >VIEW MORE</a>
                                 </div>
                             </figure>
                         )
@@ -44,7 +42,7 @@ const MainVisual = () => {
                 {
                     SLIDE.map((dots, idx) => {
                         return (
-                            <li key={dots.id} className={idx === IDX ? ' on' : ''} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.dot}</li>
+                            <li key={dots.id} className={idx === IDX ? " on" : ""} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.dot}</li>
                         )
                     })
                 }

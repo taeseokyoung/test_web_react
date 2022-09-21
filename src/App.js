@@ -1,22 +1,24 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Wrapper from './component/Wrapper';
 import TopBanner from './component/TopBanner';
-import Header from './component/Header';
-import MainVisual from './component/MainVisual';
-import BestProduct from './component/BestProduct';
+import Header from './pages/Header';
+import Main from './component/Main';
+import NewSub from './pages/NewSub';
 import Footer from './component/Footer';
 
 function App() {
   return (
-    <div className="Wrap">
+    <Wrapper>
       <TopBanner />
       <Header />
-      <main>
-        <MainVisual />
-        <BestProduct />
-
-      </main>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/new' element={<NewSub />} />
+      </Routes>
+      {/* <Main /> */}
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 
