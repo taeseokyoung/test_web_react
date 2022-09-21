@@ -3,6 +3,7 @@ import TopBanner from './component/TopBanner';
 import Header from './component/Header';
 import MainVisual from './component/MainVisual';
 import BestProduct from './component/BestProduct';
+import Footer from './component/Footer';
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
         <BestProduct />
 
       </main>
-
-
+      <Footer />
     </div>
   );
 }

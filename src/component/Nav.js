@@ -1,34 +1,15 @@
 const NavData = [
     {
-        navid: 1, title: "신상품", alink: "#!",
+        navid: 1, title: "신제품", alink: "#!",
         submenu: [
-            // { stitle: "컬렉션", slink: "#!" },
-            // { stitle: "액티비티", slink: "#!" },
-            // { stitle: "상의", slink: "#!" },
-            // { stitle: "하의", slink: "#!" },
+            // { sid: 1, stitle: "컬렉션", slink: "#!" },
+            // { sid: 2, stitle: "액티비티", slink: "#!" },
+            // { sid: 3, stitle: "상의", slink: "#!" },
+            // { sid: 4, stitle: "하의", slink: "#!" },
         ]
     },
     {
-        navid: 2, title: "베스트", alink: "#!",
-        submenu: [
-            // { stitle: "컬렉션", slink: "#!" },
-            // { stitle: "액티비티", slink: "#!" },
-            // { stitle: "상의", slink: "#!" },
-            // { stitle: "하의", slink: "#!" },
-        ]
-    },
-    {
-        navid: 3, title: "여성", alink: "#!",
-        submenu: [
-            { stitle: "컬렉션", slink: "#!" },
-            { stitle: "액티비티", slink: "#!" },
-            { stitle: "상의", slink: "#!" },
-            { stitle: "하의", slink: "#!" },
-
-        ]
-    },
-    {
-        navid: 4, title: "남성", alink: "#!",
+        navid: 2, title: "여성", alink: "#!",
         submenu: [
             { sid: 1, stitle: "컬렉션", slink: "#!" },
             { sid: 2, stitle: "액티비티", slink: "#!" },
@@ -38,7 +19,17 @@ const NavData = [
         ]
     },
     {
-        navid: 5, title: "액세서리", alink: "#!",
+        navid: 3, title: "남성", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "컬렉션", slink: "#!" },
+            { sid: 2, stitle: "액티비티", slink: "#!" },
+            { sid: 3, stitle: "상의", slink: "#!" },
+            { sid: 4, stitle: "하의", slink: "#!" },
+
+        ]
+    },
+    {
+        navid: 4, title: "액세서리", alink: "#!",
         submenu: [
             { sid: 1, stitle: "가방", slink: "#!" },
             { sid: 2, stitle: "요가소도구", slink: "#!" },
@@ -50,6 +41,14 @@ const NavData = [
 
         ]
     },
+    {
+        navid: 5, title: "커뮤니티", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "룰루레몬", slink: "#!" },
+            { sid: 2, stitle: "앰버서더", slink: "#!" },
+            { sid: 3, stitle: "스웻라이프", slink: "#!" },
+        ]
+    }
 ]
 
 const Nav = () => {

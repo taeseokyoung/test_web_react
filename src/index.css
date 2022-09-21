@@ -7,7 +7,7 @@ font
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
-
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
 /*
 -------------------------------------
 reset
@@ -29,7 +29,8 @@ body {
   margin: 0;
   padding: 0;
   /* font-size: 0.8rem; */
-  font-family: 'Noto Sans KR';
+  /* font-family: 'Noto Sans KR'; */
+  font-family: 'Pretendard';
   font-weight: normal;
   color: #333333;
   line-height: 1;

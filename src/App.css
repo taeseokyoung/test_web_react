@@ -542,6 +542,21 @@ h1 {}
   display: inline-block;
   font-size: 15px;
   text-align: left;
+  margin: 0 0 15px 0;
+}
+
+.best_slider .box .dec {
+  display: block;
+  font-size: 13px;
+  text-align: left;
+}
+
+.best_slider .box .dec>li {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  margin: 0 10px 0 0;
 }
 
 .tabslide .box .color>li {
@@ -554,4 +569,56 @@ h1 {}
 
 .tabslide .box .color>li:hover {
   border: 2px solid #d41935;
+}
+
+.Footer .newsletter {
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.newsletter strong {
+  display: block;
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.newsletter p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+.newsletter button {
+  background: #333;
+  border: inherit;
+}
+
+.Footer .footmenu {
+  padding: 40px 0;
+}
+
+.footmenu .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footmenu .left {
+  display: flex;
+  gap: 50px;
+  line-height: 1.6;
+}
+
+.footmenu .left>li>a {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.footmenu .left .fstit {
+  font-size: 15px;
+  font-weight: 400;
 }
