@@ -1,6 +1,8 @@
 import ProductList from './ProductList'
 
-const NewSub = () => {
+
+
+const Sub01 = () => {
   return (
     <div>
       <ProductList />
@@ -8,4 +10,4 @@ const NewSub = () => {
   )
 }
 
-export default NewSub
+export default Sub01
