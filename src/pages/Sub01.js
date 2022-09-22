@@ -2,11 +2,11 @@ import ProductList from './ProductList'
 
 
 
-const Sub01 = () => {
+const Sub01 = ({ ND, FP, SP }) => {
   return (
-    <div>
-      <ProductList />
-    </div>
+    <>
+      <ProductList ND={ND} FP={FP} SP={SP} />
+    </>
   )
 }
 

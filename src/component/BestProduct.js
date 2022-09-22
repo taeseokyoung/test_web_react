@@ -56,7 +56,7 @@ const BestProduct = () => {
                                             {
                                                 bslide.color.map((colorchip, idx) => {
                                                     return (
-                                                        <li style={{ background: `${colorchip}` }}></li>
+                                                        <li key={idx} style={{ background: `${colorchip}` }}></li>
                                                     )
                                                 })
                                             }
@@ -67,7 +67,7 @@ const BestProduct = () => {
                                             {
                                                 bslide.dec.map((dec, idx) => {
                                                     return (
-                                                        <li>{dec}</li>
+                                                        <li key={idx}>{dec}</li>
                                                     )
                                                 })
                                             }

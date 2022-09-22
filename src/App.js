@@ -3,10 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import Wrapper from './component/Wrapper';
 import TopBanner from './component/TopBanner';
 import Header from './component/Header';
-import HeaderSub from './component/HeaderSub';
+import Footer from './component/Footer';
 import Main from './component/Main';
 import Sub01 from './pages/Sub01';
-import Footer from './component/Footer';
+import SubPd01 from './pages/SubPd01';
+
 
 function App() {
 
@@ -143,10 +144,11 @@ function App() {
   return (
     <Wrapper>
       <TopBanner />
-      <Header />
+      <Header ND={NavData} />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/sub01' element={<Sub01 FP={FilterP} SP={SingleP} />} />
+        <Route path='/sub01' element={<Sub01 ND={NavData} FP={FilterP} SP={SingleP} />} />
+        <Route path='/sub01/p01' element={<SubPd01 SP={SingleP} />} />
       </Routes>
       {/* <Main /> */}
       <Footer />
