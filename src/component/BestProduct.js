@@ -1,4 +1,4 @@
-// import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
@@ -19,6 +19,7 @@ const BSLIDE = [
 ]
 
 const BestProduct = () => {
+    const bestSlider = useRef(null);
     const setting = {
         arrows: false,
         //dots: true,
@@ -27,6 +28,8 @@ const BestProduct = () => {
         slidesToScroll: 4,
     }
     return (
+
+
         <section className="BestProduct csc">
             <h2>룰루레몬 베스트셀러</h2>
             <div className="tabtitle">
@@ -45,7 +48,7 @@ const BestProduct = () => {
 
             <div className="tabslide">
                 <div className="inner">
-                    <Slider {...setting} className="best_slider">
+                    <Slider {...setting} ref={bestSlider} className="best_slider">
                         {BSLIDE.map(bslide => {
                             return (
                                 <figure>
@@ -78,8 +81,8 @@ const BestProduct = () => {
                         })}
                     </Slider>
                     <div className="slideArrows">
-                        <button onClick={() => BestProduct.current.slickPrev()}><i className='xi-arrow-left'></i></button>
-                        <button onClick={() => BestProduct.current.slickNext()}><i className='xi-arrow-right'></i></button>
+                        <button onClick={() => bestSlider.current.slickPrev()}><i className='xi-arrow-left'></i></button>
+                        <button onClick={() => bestSlider.current.slickNext()}><i className='xi-arrow-right'></i></button>
                     </div>
                 </div>
             </div>

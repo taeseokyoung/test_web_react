@@ -1,4 +1,3 @@
-import '../ProductList.css';
 import { Link } from 'react-router-dom';
 
 const ProductList = ({ ND, FP, SP }) => {

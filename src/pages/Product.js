@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const Product = ({ SP }) => {
 
-    const [count, setCount] = useState(0);
+    // const [count, setCount] = useState(0);
 
     return (
 
@@ -37,29 +37,32 @@ const Product = ({ SP }) => {
                     </div>
                 </div>
                 <div className='right'>
-                    <div className='dec'>
+                    <div className='decription'>
                         <ul className='Kategorie'>
                             <li>여성</li>
                             <li>상의</li>
                             <li>롱슬리브</li>
                         </ul>
-                        <div className='price'>{SP[0].price}</div>
+                        <div className='sprice'>{SP[0].price}</div>
                     </div>
-                    <div className='product'>{SP[0].product}</div>
+                    <div className='sptitle'>{SP[0].product}</div>
                     <ul className='sdec'>
                         <li>{SP[0].dec[0]}</li>
                         <li>{SP[0].dec[1]}</li>
                         <li>{SP[0].dec[2]}</li>
                     </ul>
-                    <ul className='color'>
-                        <li style={{ background: `${SP[0].color[0]}` }}></li>
-                        <li style={{ background: `${SP[0].color[1]}` }}></li>
-                    </ul>
-                    <div className='size'>
+                    <div className="choosecolor">
+                        {/* <span>색상 : 화이트</span> */}
+                        <ul className='scolor'>
+                            <li style={{ background: `${SP[0].color[0]}` }}></li>
+                            <li style={{ background: `${SP[0].color[1]}` }}></li>
+                        </ul>
+                    </div>
+                    <div className='sSize'>
                         <div>사이즈 선택</div>
                         <div>사이즈 가이드</div>
                     </div>
-                    <ul className='sizebox'>
+                    <ul className='sSizebox'>
                         <li>0</li>
                         <li>2</li>
                         <li>4</li>
@@ -72,30 +75,40 @@ const Product = ({ SP }) => {
                         <li>18</li>
                         <li>20</li>
                     </ul>
-                    <div className='count'>
+                    <div className='scount'>
                         <div>수량</div>
-                        <i className='xi-plus-min'></i>
-                        <i className='xi-minus-min'></i>
+                        <div className="countIcon">
+                            <i className='xi-plus-min'></i>
+                            <i className='xi-minus-min'></i>
+                        </div>
+
                     </div>
-                    <div className='buy'>
-                        <button className='cbtn'>바로구매</button>
+                    <div className="pButton">
+                        <div className='sbuy'>
+                            <button className='sbtn'>바로구매</button>
+                        </div>
+                        <div className='spcart'>
+                            <button className='sbtn2'>장바구니</button>
+                            <button className='sbtn2'>위시리스트<i className='xi-heart-o'></i> </button>
+                        </div>
                     </div>
-                    <div className='cart'>
-                        <button className='cbtn'>장바구니</button>
-                        <button className='cbtn'>위시리스트<i className='xi-heart-o'></i> </button>
-                    </div>
-                    <ul className='detail'>
+                    <ul className='sDetail'>
                         <li>
-                            <a>Product Features<i className='xi-angle-down-min'></i></a>
-                            <ul>
-                                <li>Product Features</li>
+                            <a href='#!' className='detailTitle'>
+                                <p>Product Features</p>
+                                <i className='xi-angle-down-min'></i>
+                            </a>
+                            <ul className='detailDec'>
                                 <li>바디라인이 드러나는 핏</li>
                                 <li>웨이스트밴드 아래까지 내려오는 길이</li>
                             </ul>
                         </li>
-                        <li>
-                            <a>초경량 Nulux™ 원단<i className='xi-angle-down-min'></i></a>
-                            <ul>
+                        <li className='dotMenu'>
+                            <a href='#!' className='detailTitle'>
+                                <p>Nulux™ 원단</p>
+                                <i className='xi-angle-down-min'></i>
+                            </a>
+                            <ul className='detailDec'>
                                 <li>초경량</li>
                                 <li>엔지니어드 4방 스트레치</li>
                                 <li>속건성</li>
@@ -106,15 +119,18 @@ const Product = ({ SP }) => {
                                 <li>땀이 많이 나는 부분에는 메쉬 원단을 사용해 탁월한 통기성</li>
                             </ul>
                         </li>
-                        <li>
-                            <a>배송 및 반품정책<i className='xi-angle-down-min'></i></a>
-                            <ul>
+                        <li className='return'>
+                            <a href='#!' className='detailTitle'>
+                                <p>배송 및 반품정책</p>
+                                <i className='xi-angle-down-min'></i>
+                            </a>
+                            <ul className='detailDec'>
                                 <li>
-                                    <span>[출고 및 배송 지연 안내]<i className='xi-angle-down-min'></i></span>
+                                    <span>[출고 및 배송 지연 안내]</span>
                                     COVID-19 상황으로 인해 홍콩 내 항공 스케줄이 지연되어, 접수된 주문 건의 출고 및 통관이 영업일 1-3일 가량 지연될 수 있습니다. 이 점 양해 부탁드리며, 빠른 배송을 위해 최선을 다하겠습니다.
                                 </li>
                                 <li>
-                                    <span>온라인 스토어 반품 정책<i className='xi-angle-down-min'></i></span>
+                                    <span>[온라인 스토어 반품 정책]</span>
                                     제품이 마음에 들지 않아서 반품을 생각하고 계신다면 안심하세요. 룰루레몬 온라인 스토어에서 구매한 제품은 수령일로부터 30일 이내에 반품 신청할 수 있어요. 반품 신청 전에 제품 택이 부착되어 있는지, 착용 및 세탁하지 않은 상태인지 다시 한 번 체크해주세요.
                                 </li>
                                 <li>
