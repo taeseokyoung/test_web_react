@@ -17,18 +17,29 @@ const Header = ({ ND }) => {
         <header className="Header">
             <div class="inner">
                 <nav className='Gnb'>
-                    <ul className="mNav" onClick={() => {
-
-                    }}>
+                    <ul className="mNav" onClick={() => { }}>
                         {
-                            ND.map(
+                            ND && ND.map(
                                 (el, idx) => (<li key={el.navid}>
-                                    <NavLink to={el.alink} >
+                                    <NavLink to={el.link} >
                                         {el.title}
                                         <ul className="sNav">
                                             {
-                                                el.submenu.map(
-                                                    smenu => (<li key={el.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
+                                                el.mainsub && el.mainsub.map(
+                                                    els => (<li key={els.sid}>
+                                                        <a href={els.slink}>{els.stitle}</a>
+                                                        <ul className='submenu'>
+                                                            {
+                                                                els.submenu.map(subel => (
+                                                                    <li key={subel.wid}>
+                                                                        <a href='/'>
+                                                                            {subel.name}
+                                                                        </a>
+                                                                    </li>
+                                                                ))
+                                                            }
+                                                        </ul>
+                                                    </li>)
                                                 )
                                             }
                                         </ul>

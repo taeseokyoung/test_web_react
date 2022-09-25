@@ -13,53 +13,103 @@ function App() {
 
   const NavData = [
     {
-      navid: 1, title: "신제품", alink: "/sub01",
-      submenu: [
-        // { sid: 1, stitle: "컬렉션", slink: "#!" },
-        // { sid: 2, stitle: "액티비티", slink: "#!" },
-        // { sid: 3, stitle: "상의", slink: "#!" },
-        // { sid: 4, stitle: "하의", slink: "#!" },
+      navid: 1, title: "신제품", link: "/sub01",
+      mainsub: [
+        { sid: 1, stitle: "여성", slink: "#!", submenu: [] },
+        { sid: 2, stitle: "남성", slink: "#!", submenu: [] },
       ]
     },
-    {
-      navid: 2, title: "여성", alink: "#!",
-      submenu: [
-        { sid: 1, stitle: "컬렉션", slink: "#!" },
-        { sid: 2, stitle: "액티비티", slink: "#!" },
-        { sid: 3, stitle: "상의", slink: "#!" },
-        { sid: 4, stitle: "하의", slink: "#!" },
 
-      ]
-    },
     {
-      navid: 3, title: "남성", alink: "#!",
-      submenu: [
-        { sid: 1, stitle: "컬렉션", slink: "#!" },
-        { sid: 2, stitle: "액티비티", slink: "#!" },
-        { sid: 3, stitle: "상의", slink: "#!" },
-        { sid: 4, stitle: "하의", slink: "#!" },
-
+      navid: 2, title: "여성", link: "/sub02",
+      mainsub: [
+        {
+          sid: 1, stitle: "상의", slink: "#!",
+          submenu: [{ wid: 1, name: "스포츠브라" }, { wid: 2, name: "탱크" }, { wid: 3, name: "숏슬리브" }, { wid: 4, name: "후디&스웻셔츠" }, { wid: 5, name: "아우터" }, { wid: 6, name: "스웨터" }]
+        },
+        {
+          sid: 2, stitle: "하의", slink: "#!",
+          submenu: [{ wid2: 1, name: "조거" }, { wid2: 2, name: "레깅스" }, { wid2: 3, name: "쇼츠" }, { wid4: 1, name: "스커트" }]
+        },
+        {
+          sid: 3, stitle: "원피스&점프수트", slink: "#!", submenu: []
+        },
+        {
+          sid: 4, stitle: "수영복", slink: "#!", submenu: []
+        },
+        {
+          sid: 5, stitle: "언더웨어", slink: "#!", submenu: []
+        },
       ]
     },
+
     {
-      navid: 4, title: "액세서리", alink: "#!",
-      submenu: [
-        { sid: 1, stitle: "가방", slink: "#!" },
-        { sid: 2, stitle: "요가소도구", slink: "#!" },
-        { sid: 3, stitle: "요가 매트", slink: "#!" },
-        { sid: 4, stitle: "장갑", slink: "#!" },
-        { sid: 5, stitle: "헤어 액세서리", slink: "#!" },
-        { sid: 6, stitle: "모자", slink: "#!" },
-        { sid: 7, stitle: "양말", slink: "#!" },
-
+      navid: 3, title: "남성", link: "/sub03",
+      mainsub: [
+        {
+          sid: 1, stitle: "상의", slink: "#!",
+          submenu: [{ mid: 1, name: "탱크" }, { mid: 2, name: "티셔츠" }, { mid: 3, name: "셔츠" }, { mid: 4, name: "후디&스웻셔츠" }, { mid: 5, name: "아우터" }]
+        },
+        {
+          sid: 2, stitle: "하의", slink: "#!",
+          submenu: ["조거", "타이즈", "쇼츠"]
+        },
+        {
+          sid: 3, stitle: "수영복", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 4, stitle: "언더웨어", slink: "#!",
+          submenu: []
+        },
       ]
     },
+
+    {
+      navid: 4, title: "액세서리", link: "/sub04",
+      mainsub: [
+        {
+          sid: 1, stitle: "양말", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 2, stitle: "장갑", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 3, stitle: "가방", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 4, stitle: "요가용품", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 5, stitle: "헤어 액세서리", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 6, stitle: "모자", slink: "#!",
+          submenu: []
+        },
+      ]
+    },
+
     {
       navid: 5, title: "커뮤니티", alink: "#!",
       submenu: [
-        { sid: 1, stitle: "룰루레몬", slink: "#!" },
-        { sid: 2, stitle: "앰버서더", slink: "#!" },
-        { sid: 3, stitle: "스웻라이프", slink: "#!" },
+        {
+          sid: 1, stitle: "룰루레몬", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 2, stitle: "앰버서더", slink: "#!",
+          submenu: []
+        },
+        {
+          sid: 3, stitle: "스웻라이프", slink: "#!",
+          submenu: []
+        },
       ]
     }
   ]
@@ -70,7 +120,6 @@ function App() {
       content: [
         { cid: 1, ctitle: "여성", link: "#!" },
         { cid: 2, ctitle: "남성", link: "#!" },
-        { cid: 3, ctitle: "공용", link: "#!" },
       ]
     },
     {
@@ -82,9 +131,8 @@ function App() {
         { cid: 4, ctitle: "레깅스 & 타이츠", link: "#!" },
         { cid: 5, ctitle: "후디 & 스웻셔츠", link: "#!" },
         { cid: 6, ctitle: "아우터", link: "#!" },
-        { cid: 7, ctitle: "양말", link: "#!" },
-        { cid: 8, ctitle: "수영복", link: "#!" },
-        { cid: 9, ctitle: "언더웨어", link: "#!" },
+        { cid: 7, ctitle: "수영복", link: "#!" },
+        { cid: 8, ctitle: "언더웨어", link: "#!" },
       ]
     },
     {
@@ -130,7 +178,7 @@ function App() {
   ]
 
   const SingleP = [
-    { id: 1, product: "Nulux 하프집 롱슬리브 셔츠", price: "138,000원", color: ["#eaeaec", "#222222"], dec: ["Nulux™", "고강도", "트레이닝"], link: "/" },
+    { id: 1, product: "Nulux 하프집 롱슬리브 셔츠", price: "138,000원", color: ["#eaeaec", "#222222"], dec: ["Nulux™", "고강도", "트레이닝"], link: "/sub01/pd01", gender: "women", filter: { cid: 1 }, nav: { wid: 1 }, new: true, },
     { id: 2, product: "코트 라이벌 하이라이즈 스커트 15", price: "65,000원 - 93,000원", color: ["#f8e8e6", "#eaeaec", "#d6d6e5", "#00223f", "#222222", "#a6005f", "#cbe89a"], dec: ["Swift™", "테니스"], link: "/", },
     { id: 3, product: "퀵 드라잉 숏슬리브 폴로 셔츠", price: "65,000원 - 93,000원", color: ["#cbe89a", "#eaeaec", "#d6d6e5", "#222222"], dec: ["클래식", "골프", "테니스"], link: "/", },
     { id: 4, product: "플리티드 라인드 하이라이즈 테니스 스커트", price: "65,000원 - 93,000원", color: ["#d8d2b2", "#eaeaec", "#a4999a", "#444144", "#222222", "#e78d85", "#dbb1ad", "#e1b3b9", "#acacac", "#bbdecd"], dec: ["Swift™", "테니스"], link: "/", },
