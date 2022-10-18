@@ -14,21 +14,8 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
     }
     return (
         <section className="BestProduct csc">
-            <h2>룰루레몬 베스트셀러</h2>
-            <div className="title">
-                <ul>
-                    {
-                        NAVDATA[0].mainsub.map(it => {
-                            return (
-                                <li key={it.sid}>
-                                    {it.stitle}
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </div>
-
+            <h2>신제품</h2>
+            <p>룰루레몬의 신제품과 함께 간절기를 대비하세요.</p>
             <div className="tabslide">
                 <div className="inner">
                     <Slider {...setting} ref={bestSlider} className="best_slider">

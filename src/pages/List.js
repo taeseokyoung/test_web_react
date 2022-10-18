@@ -1,32 +1,27 @@
 import { Link } from 'react-router-dom';
 
-const ProductList = ({ ND, FP, SP }) => {
+const List = ({ FILTER, ITMDATA, NAVDATA }) => {
 
     return (
         <section className='NewProducts'>
-
             <div className='inner'>
                 <div className='left'>
                     <div className='NPtitle'>
-                        <span>{FP[0].content.ctitle}</span>
-                        <h3>{ND[0].title}</h3>
+                        <h3>카테고리</h3>
                     </div>
                     <ul className='title'>
                         {
-                            FP.map(el => {
+                            FILTER.map(it => {
                                 return (
-                                    <li key={el.id}>
-                                        {el.title}
-                                        <a href='#!'>
-                                            <i className='xi-angle-down-min'></i>
-                                        </a>
+                                    <li key={it.id}>{it.title}
+                                        <i className='xi-angle-down-min'></i>
                                         <ul className='stitle'>
                                             {
-                                                el.content.map(els => {
+                                                it.content.map(it => {
                                                     return (
-                                                        <li key={els.cid}>
+                                                        <li key={it.id}>
                                                             <input type="checkbox" />
-                                                            {els.ctitle}
+                                                            {it.title}
                                                         </li>
                                                     )
                                                 })
@@ -41,29 +36,30 @@ const ProductList = ({ ND, FP, SP }) => {
                 <div className="right">
                     <div className='pdList'>
                         {
-                            SP.map(el => {
+                            ITMDATA.map(it => {
                                 return (
-                                    <Link to='/sub01/p01'>
+                                    // <Link to={`/List/ + ${NAVDATA.title}`} ></Link>
+                                    <Link to='/List'>
                                         <div className='pImage'>
-                                            <img src={process.env.PUBLIC_URL + "/assets/images/s1-0" + el.id + ".jpg"} alt="" />
+                                            <img src={process.env.PUBLIC_URL + "/assets/images/s1-0" + it.id + ".jpg"} alt="" />
 
                                             <div className="box">
                                                 <ul className="color">
                                                     {
-                                                        el.color.map((colorchip, idx) => {
+                                                        it.color.map((colorchip, idx) => {
                                                             return (
                                                                 <li key={idx} style={{ background: `${colorchip}` }}></li>
                                                             )
                                                         })
                                                     }
                                                 </ul>
-                                                <strong className='product'>{el.product}</strong>
-                                                <div className="price">{el.price}</div>
+                                                <strong className='product'>{it.product}</strong>
+                                                <div className="price">{it.price}</div>
                                                 <ul className='dec'>
                                                     {
-                                                        el.dec.map((els, idx) => {
+                                                        it.dec.map((it, idx) => {
                                                             return (
-                                                                <li key={idx}>{els}</li>
+                                                                <li key={idx}>{it}</li>
                                                             )
                                                         })
                                                     }
@@ -81,4 +77,4 @@ const ProductList = ({ ND, FP, SP }) => {
     )
 }
 
-export default ProductList
+export default List;

@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 // background-image: url(${LogoSrc});
 // `
 
-const Header = ({ ND }) => {
+const Header = ({ NAVDATA }) => {
 
     // const [HeadChange, setHeadChange] = useState(false)
 
@@ -19,18 +19,18 @@ const Header = ({ ND }) => {
                 <nav className='Gnb'>
                     <ul className="mNav" onClick={() => { }}>
                         {
-                            ND && ND.map(
-                                (el, idx) => (<li key={el.navid}>
-                                    <NavLink to={el.link} >
-                                        {el.title}
+                            NAVDATA && NAVDATA.map(
+                                (it, idx) => (<li key={it.navid}>
+                                    <NavLink to={it.link} >
+                                        {it.title}
                                         <ul className="sNav">
                                             {
-                                                el.mainsub && el.mainsub.map(
-                                                    els => (<li key={els.sid}>
-                                                        <a href={els.slink}>{els.stitle}</a>
+                                                it.mainsub && it.mainsub.map(
+                                                    it => (<li key={it.sid}>
+                                                        <a href={it.slink}>{it.stitle}</a>
                                                         <ul className='submenu'>
                                                             {
-                                                                els.submenu.map(subel => (
+                                                                it.submenu.map(subel => (
                                                                     <li key={subel.wid}>
                                                                         <a href='/'>
                                                                             {subel.name}

@@ -1,8 +1,8 @@
-import '../Product.css'
+import '../css/Product.scss'
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
 
-const Product = ({ SP }) => {
+const Itm = ({ SP }) => {
 
     // const [count, setCount] = useState(0);
 
@@ -158,4 +158,4 @@ const Product = ({ SP }) => {
     )
 }
 
-export default Product
+export default Itm
