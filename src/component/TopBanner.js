@@ -40,9 +40,9 @@ const TopBanner = () => {
                     <li><a href="#!">배송 조회</a></li>
                     <li><a href="#!">뉴스레터 구독</a></li>
                     <li><a href="#!">스토어 찾기</a></li>
-                    <li class="language">
-                        <strong> <i class="xi-globus"></i> KOR <i class="xi-angle-down arrow"></i></strong>
-                        <ul class="lang_box">
+                    <li className="language">
+                        <strong> <i className="xi-globus"></i> KOR <i className="xi-angle-down arrow"></i></strong>
+                        <ul className="lang_box">
                             <li><a href="#!">KOR</a></li>
                             <li><a href="#!">ENG</a></li>
                             <li><a href="#!">CHN</a></li>

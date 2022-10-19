@@ -667,6 +667,10 @@ h1 {}
       height: calc(100vh - 150px);
       overflow: scroll;
 
+      input {
+        margin: 0 10px 0 0;
+      }
+
       .NPtitle {
         margin: 0 0 30px 0;
         font-size: 21px;
@@ -707,12 +711,19 @@ h1 {}
           line-height: 1.45;
         }
       }
+
     }
 
     .right {
       flex: 3;
       width: 1100px;
       height: auto;
+
+      .newMain {
+        height: 350px;
+        background: url(../../public/assets/images/newMain.jpg) no-repeat center center/cover;
+        margin: 0 0 30px 0;
+      }
 
       .pdList {
         display: grid;
@@ -769,10 +780,6 @@ h1 {}
       }
 
     }
-  }
-
-  .input {
-    margin: 0 10px 0 0;
   }
 
 }

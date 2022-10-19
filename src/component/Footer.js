@@ -1,48 +1,7 @@
 import React from 'react'
 
-const FOOTDATA = [
-    {
-        id: 1, title: "PRODUCT", alink: "#!",
-        submenu: [
-            { sid: 1, stitle: "신제품", slink: "#!" },
-            { sid: 2, stitle: "여성", slink: "#!" },
-            { sid: 3, stitle: "남성", slink: "#!" },
-            { sid: 4, stitle: "액세서리", slink: "#!" },
-        ]
-    },
-    {
-        id: 2, title: "MY ACCOUNT", alink: "#!",
-        submenu: [
-            { sid: 1, stitle: "내 계정", slink: "#!" },
-            { sid: 2, stitle: "위시리스트", slink: "#!" },
-            { sid: 3, stitle: "주문/배송조회", slink: "#!" },
-            { sid: 4, stitle: "취소/반품", slink: "#!" },
-        ]
-    },
-    {
-        id: 3, title: "SUPPORT", alink: "#!",
-        submenu: [
-            { sid: 1, stitle: "고객센터", slink: "#!" },
-            { sid: 2, stitle: "수선 안내", slink: "#!" },
-            { sid: 4, stitle: "FAQ", slink: "#!" },
-            { sid: 5, stitle: "기프트 카드", slink: "#!" },
-            { sid: 6, stitle: "이용약관", slink: "#!" },
-        ]
-    },
-    {
-        id: 4, title: "ABOUT US", alink: "#!",
-        submenu: [
-            { sid: 1, stitle: "브랜드스토리", slink: "#!" },
-            { sid: 2, stitle: "사회공헌 프로그램", slink: "#!" },
-            { sid: 3, stitle: "팀세일 및 벌크세일", slink: "#!" },
-            { sid: 3, stitle: "친구 추천 캠페인", slink: "#!" },
-            { sid: 4, stitle: "룰루레몬 멤버쉽", slink: "#!" },
-            { sid: 5, stitle: "채용안내", slink: "#!" },
-        ]
-    },
-]
 
-const Footer = () => {
+const Footer = ({ FOOTDATA }) => {
     return (
         <footer className="Footer">
             <div className="newsletter">
@@ -60,18 +19,20 @@ const Footer = () => {
                     <div className='middle'>
                         <ul className="mid">
                             {
-                                FOOTDATA.map(
-                                    (el, idx) => (<li key={el.id}>
-                                        <a href={el.alink}>{el.title}</a>
-                                        <ul className="fstit">
-                                            {
-                                                el.submenu.map(
-                                                    smenu => (<li key={el.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
-                                                )
-                                            }
-                                        </ul>
-                                    </li>)
-                                )
+                                FOOTDATA.map((el, idx) => {
+                                    return (
+                                        <li key={el.id}>
+                                            <a href={el.alink}>{el.title}</a>
+                                            <ul className="fstit">
+                                                {
+                                                    el.submenu.map(
+                                                        smenu => (<li key={el.sid}><a href={smenu.slink}>{smenu.stitle}</a></li>)
+                                                    )
+                                                }
+                                            </ul>
+                                        </li>
+                                    )
+                                })
                             }
                         </ul>
                         <ul className="important">

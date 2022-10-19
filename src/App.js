@@ -6,7 +6,7 @@ import Footer from './component/Footer';
 import Main from './component/Main';
 import List from './pages/List';
 import Itm from './pages/Itm';
-import { NAVDATA, FILTER, ITMDATA } from './Data'
+import { NAVDATA, FILTER, ITMDATA, FOOTDATA } from './Data'
 import './css/App.scss';
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
         <Route path='/' element={<Main NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
         <Route path='/List' element={<List FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
         <Route path='/List/:category' element={<List ITMDATA={ITMDATA} />} />
-        <Route path={`/Itm/:${ITMDATA.id}`} element={<Itm FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
+        <Route path='/Itm/:idx' element={<Itm FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
       </Routes>
-      <Footer />
+      <Footer FOOTDATA={FOOTDATA} />
     </Wrapper>
   );
 }

@@ -1,6 +1,7 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
+
 
 
 const BestProduct = ({ ITMDATA, NAVDATA }) => {
@@ -12,16 +13,20 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
         slidesToShow: 4,
         slidesToScroll: 4,
     }
+
+    const NEW = ITMDATA.filter(itm => true === itm.new);
+
     return (
+
         <section className="BestProduct csc">
             <h2>신제품</h2>
             <p>룰루레몬의 신제품과 함께 간절기를 대비하세요.</p>
             <div className="tabslide">
                 <div className="inner">
                     <Slider {...setting} ref={bestSlider} className="best_slider">
-                        {ITMDATA.map(it => {
+                        {NEW.map(it => {
                             return (
-                                <figure>
+                                <figure key={it.id}>
                                     <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
                                     <div className="box">
                                         <ul className="color">

@@ -1,6 +1,6 @@
 const NAVDATA = [
     {
-        navid: 1, title: "신제품", link: "/신제품",
+        navid: 1, title: "신제품", link: "/List",
         mainsub: [
             { sid: 1, stitle: "여성", slink: "#!", submenu: [] },
             { sid: 2, stitle: "남성", slink: "#!", submenu: [] }
@@ -8,7 +8,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 2, title: "여성", link: "/sub02",
+        navid: 2, title: "여성", link: "/List/여성",
         mainsub: [
             {
                 sid: 1, stitle: "상의", slink: "#!",
@@ -27,7 +27,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 3, title: "남성", link: "/sub03",
+        navid: 3, title: "남성", link: "/List/남성",
         mainsub: [
             {
                 sid: 1, stitle: "상의", slink: "#!",
@@ -43,7 +43,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 4, title: "액세서리", link: "/sub04",
+        navid: 4, title: "액세서리", link: "/List/액세서리",
         mainsub: [
             { sid: 1, stitle: "양말", slink: "#!", submenu: [] },
             { sid: 2, stitle: "장갑", slink: "#!", submenu: [] },
@@ -55,7 +55,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 5, title: "커뮤니티", alink: "#!",
+        navid: 5, title: "커뮤니티", link: "/List/커뮤니티",
         submenu: [
             { sid: 1, stitle: "룰루레몬", slink: "#!", submenu: [] },
             { sid: 2, stitle: "앰버서더", slink: "#!", submenu: [] },
@@ -135,7 +135,8 @@ const ITMDATA = [
         dec: ["Nulux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "아우터"],
-        new: false
+        new: false,
+        link: "/Itm/1"
     },
 
     {
@@ -175,7 +176,7 @@ const ITMDATA = [
         dec: ["Everlux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "탱크"],
-        new: false
+        new: true
     },
 
     {
@@ -205,7 +206,7 @@ const ITMDATA = [
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "스포츠브라"],
-        new: false
+        new: true
     },
 
     {
@@ -215,7 +216,7 @@ const ITMDATA = [
         dec: ["Lycra™", "트레이닝"],
         gender: "남성",
         filter: ["상의", "티셔츠"],
-        new: true
+        new: false
     },
 
     {
@@ -235,7 +236,7 @@ const ITMDATA = [
         dec: ["코튼", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
-        new: true
+        new: false
     },
 
     {
@@ -249,4 +250,46 @@ const ITMDATA = [
     },
 ]
 
-export { NAVDATA, FILTER, ITMDATA };
+const FOOTDATA = [
+    {
+        id: 1, title: "PRODUCT", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "신제품", slink: "#!" },
+            { sid: 2, stitle: "여성", slink: "#!" },
+            { sid: 3, stitle: "남성", slink: "#!" },
+            { sid: 4, stitle: "액세서리", slink: "#!" },
+        ]
+    },
+    {
+        id: 2, title: "MY ACCOUNT", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "내 계정", slink: "#!" },
+            { sid: 2, stitle: "위시리스트", slink: "#!" },
+            { sid: 3, stitle: "주문/배송조회", slink: "#!" },
+            { sid: 4, stitle: "취소/반품", slink: "#!" },
+        ]
+    },
+    {
+        id: 3, title: "SUPPORT", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "고객센터", slink: "#!" },
+            { sid: 2, stitle: "수선 안내", slink: "#!" },
+            { sid: 4, stitle: "FAQ", slink: "#!" },
+            { sid: 5, stitle: "기프트 카드", slink: "#!" },
+            { sid: 6, stitle: "이용약관", slink: "#!" },
+        ]
+    },
+    {
+        id: 4, title: "ABOUT US", alink: "#!",
+        submenu: [
+            { sid: 1, stitle: "브랜드스토리", slink: "#!" },
+            { sid: 2, stitle: "사회공헌 프로그램", slink: "#!" },
+            { sid: 3, stitle: "팀세일 및 벌크세일", slink: "#!" },
+            { sid: 3, stitle: "친구 추천 캠페인", slink: "#!" },
+            { sid: 4, stitle: "룰루레몬 멤버쉽", slink: "#!" },
+            { sid: 5, stitle: "채용안내", slink: "#!" },
+        ]
+    },
+]
+
+export { NAVDATA, FILTER, ITMDATA, FOOTDATA };

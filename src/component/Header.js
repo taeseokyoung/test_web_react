@@ -23,7 +23,7 @@ const Header = ({ NAVDATA }) => {
                                 (it, idx) => (<li key={it.navid}>
                                     <NavLink to={it.link} >
                                         {it.title}
-                                        <ul className="sNav">
+                                        {/* <ul className="sNav">
                                             {
                                                 it.mainsub && it.mainsub.map(
                                                     it => (<li key={it.sid}>
@@ -42,7 +42,7 @@ const Header = ({ NAVDATA }) => {
                                                     </li>)
                                                 )
                                             }
-                                        </ul>
+                                        </ul> */}
                                     </NavLink>
                                 </li>)
                             )
@@ -73,8 +73,8 @@ const Header = ({ NAVDATA }) => {
                             <li><a href="#!">위시리스트</a></li>
                         </ul>
                     </div>
-                    <div class="cart">
-                        <strong><i class="xi-cart-o"></i></strong>
+                    <div className="cart">
+                        <strong><i className="xi-cart-o"></i></strong>
                     </div>
                 </div>
             </div>
