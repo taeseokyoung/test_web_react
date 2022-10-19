@@ -5,7 +5,7 @@ import Header from './component/Header';
 import Footer from './component/Footer';
 import Main from './component/Main';
 import List from './pages/List';
-import Itm from './pages/Itm';
+import Itms from './pages/Itms';
 import { NAVDATA, FILTER, ITMDATA, FOOTDATA } from './Data'
 import './css/App.scss';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Main NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
         <Route path='/List' element={<List FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
         <Route path='/List/:category' element={<List ITMDATA={ITMDATA} />} />
-        <Route path='/Itm/:idx' element={<Itm FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
+        <Route path='/Itms/:itm' element={<Itms FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
       </Routes>
       <Footer FOOTDATA={FOOTDATA} />
     </Wrapper>

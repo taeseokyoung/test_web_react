@@ -136,6 +136,10 @@ const ITMDATA = [
         gender: "여성",
         filter: ["상의", "아우터"],
         new: false,
+        img: [
+            { co: "흰색", tit: ["w1", "w2", "w3", "w4", "w5"] },
+            { co: "검정색", tit: ["b1", "b2", "b3", "b4", "b5"] }
+        ],
         link: "/Itm/1"
     },
 
@@ -146,7 +150,8 @@ const ITMDATA = [
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
-        new: false
+        new: false,
+        link: "/Itm/2"
     },
 
     {
@@ -156,7 +161,8 @@ const ITMDATA = [
         dec: ["클래식", "골프", "테니스"],
         gender: "여성",
         filter: ["상의", "롱슬리브"],
-        new: false
+        new: false,
+        link: "/Itm/3"
     },
 
     {
@@ -166,7 +172,8 @@ const ITMDATA = [
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
-        new: false
+        new: false,
+        link: "/Itm/4"
     },
 
     {
@@ -176,7 +183,8 @@ const ITMDATA = [
         dec: ["Everlux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "탱크"],
-        new: true
+        new: true,
+        link: "/Itm/5"
     },
 
     {
@@ -186,7 +194,8 @@ const ITMDATA = [
         dec: ["Nulux™", "초경량", "러닝"],
         gender: "여성",
         filter: ["하의", "쇼츠"],
-        new: false
+        new: false,
+        link: "/Itm/6"
     },
 
     {
@@ -196,7 +205,8 @@ const ITMDATA = [
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "탱크"],
-        new: false
+        new: false,
+        link: "/Itm/7"
     },
 
     {
@@ -206,7 +216,8 @@ const ITMDATA = [
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "스포츠브라"],
-        new: true
+        new: true,
+        link: "/Itm/8"
     },
 
     {
@@ -216,7 +227,8 @@ const ITMDATA = [
         dec: ["Lycra™", "트레이닝"],
         gender: "남성",
         filter: ["상의", "티셔츠"],
-        new: false
+        new: false,
+        link: "/Itm/9"
     },
 
     {
@@ -226,7 +238,8 @@ const ITMDATA = [
         dec: ["코튼 테리", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
-        new: true
+        new: true,
+        link: "/Itm/10"
     },
 
     {
@@ -236,7 +249,8 @@ const ITMDATA = [
         dec: ["코튼", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
-        new: false
+        new: false,
+        link: "/Itm/11"
     },
 
     {
@@ -246,7 +260,8 @@ const ITMDATA = [
         dec: ["Glyde™", "데일리"],
         gender: "남성",
         filter: ["상의", "아우터"],
-        new: true
+        new: true,
+        link: "/Itm/12"
     },
 ]
 
