@@ -15,8 +15,8 @@ const Header = ({ NAVDATA }) => {
 
     return (
         <header className="Header">
-            <div class="inner">
-                <nav className='Gnb'>
+            <div className="inner">
+                <nav className="Gnb">
                     <ul className="mNav" onClick={() => { }}>
                         {
                             NAVDATA && NAVDATA.map(
@@ -27,8 +27,8 @@ const Header = ({ NAVDATA }) => {
                                             {
                                                 it.mainsub && it.mainsub.map(
                                                     it => (<li key={it.sid}>
-                                                        <a href={it.slink}>{it.stitle}</a>
-                                                        <ul className='submenu'>
+                                                        <Link to={it.slink}>{it.stitle}</Link>
+                                                        <ul className="submenu">
                                                             {
                                                                 it.submenu.map(subel => (
                                                                     <li key={subel.wid}>
@@ -55,8 +55,8 @@ const Header = ({ NAVDATA }) => {
                         {/* <img src={process.env.PUBLIC_URL + `/assets/images/logo.png`} alt="" /> */}
                     </Link>
                 </h1>
-                <div className='top_service'>
-                    <div className='top_search'>
+                <div className="top_service">
+                    <div className="top_search">
                         <div className="search_box">
                             <form action="#!">
                                 <input type="text" placeholder="룰루레몬 상품 검색" required />
@@ -66,7 +66,7 @@ const Header = ({ NAVDATA }) => {
                             </form>
                         </div>
                     </div>
-                    <div className={'login ' + (TG[0] ? 'on' : '')}>
+                    <div className={"login " + (TG[0] ? 'on' : '')}>
                         <strong onClick={() => setTG([!TG[0], false])}><i className="xi-user-o"></i></strong>
                         <ul className="login_box">
                             <li><a href="#!">로그인</a></li>

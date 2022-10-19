@@ -132,10 +132,6 @@ const ITMDATA = [
         id: 1, product: "Nulux 하프집 롱슬리브 셔츠",
         price: "138,000원",
         color: ["#eaeaec", "#222222"],
-        fcolor: [
-            { id: 1, cate: "흰색", src: ["여기는 색상별 이미지"] },
-            { id: 2, cate: "검정색", src: ["여기는 색상별 이미지"] }
-        ],
         dec: ["Nulux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "아우터"],
@@ -146,15 +142,6 @@ const ITMDATA = [
         id: 2, product: "코트 라이벌 하이라이즈 스커트 15",
         price: "65,000원 - 93,000원",
         color: ["#f8e8e6", "#eaeaec", "#d6d6e5", "#00223f", "#222222", "#a6005f", "#cbe89a"],
-        fcolor: [
-            { id: 1, cate: "분홍색", src: ["여기는 색상별 이미지"] },
-            { id: 2, cate: "흰색", src: ["여기는 색상별 이미지"] },
-            { id: 3, cate: "파란색", src: ["여기는 색상별 이미지"] },
-            { id: 4, cate: "검정색", src: ["여기는 색상별 이미지"] },
-            { id: 5, cate: "검정색", src: ["여기는 색상별 이미지"] },
-            { id: 6, cate: "분홍색", src: ["여기는 색상별 이미지"] },
-            { id: 7, cate: "녹색", src: ["여기는 색상별 이미지"] },
-        ],
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
@@ -165,12 +152,6 @@ const ITMDATA = [
         id: 3, product: "퀵 드라잉 숏슬리브 폴로 셔츠",
         price: "65,000원 - 93,000원",
         color: ["#cbe89a", "#eaeaec", "#d6d6e5", "#222222"],
-        fcolor: [
-            { id: 1, cate: "녹색", src: [] },
-            { id: 2, cate: "흰색", src: [] },
-            { id: 3, cate: "파란색", src: [] },
-            { id: 4, cate: "검정색", src: [] }
-        ],
         dec: ["클래식", "골프", "테니스"],
         gender: "여성",
         filter: ["상의", "롱슬리브"],
@@ -181,18 +162,6 @@ const ITMDATA = [
         id: 4, product: "플리티드 라인드 하이라이즈 테니스 스커트",
         price: "65,000원 - 93,000원",
         color: ["#d8d2b2", "#eaeaec", "#a4999a", "#444144", "#222222", "#e78d85", "#dbb1ad", "#e1b3b9", "#acacac", "#bbdecd"],
-        fcolor: [
-            { id: 1, cate: "노란색", src: [] },
-            { id: 2, cate: "흰색", src: [] },
-            { id: 3, cate: "회색", src: [] },
-            { id: 4, cate: "회색", src: [] },
-            { id: 5, cate: "검정색", src: [] },
-            { id: 6, cate: "분홍색", src: [] },
-            { id: 7, cate: "분홍색", src: [] },
-            { id: 8, cate: "분홍색", src: [] },
-            { id: 9, cate: "회색", src: [] },
-            { id: 10, cate: "녹색", src: [] }
-        ],
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
@@ -203,12 +172,6 @@ const ITMDATA = [
         id: 5, product: "인비고레이트 트레이닝 탱크탑",
         price: "93,000원",
         color: ["#222222", "#9a9977", "#f14655", "#d1d884"],
-        fcolor: [
-            { id: 1, cate: "검정색", src: [] },
-            { id: 2, cate: "녹색", src: [] },
-            { id: 3, cate: "주황색", src: [] },
-            { id: 4, cate: "녹색", src: [] }
-        ],
         dec: ["Everlux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "탱크"],
@@ -219,13 +182,6 @@ const ITMDATA = [
         id: 6, product: "패스트 앤 프리 하이라이즈 쇼츠 6",
         price: "93,000원",
         color: ["#00213f", "#945443", "#403d41", "#222222", "#a3005e"],
-        fcolor: [
-            { id: 1, cate: "검정색", src: [] },
-            { id: 2, cate: "주황색", src: [] },
-            { id: 3, cate: "회색", src: [] },
-            { id: 4, cate: "검정색", src: [] },
-            { id: 5, cate: "분홍색", src: [] },
-        ],
         dec: ["Nulux™", "초경량", "러닝"],
         gender: "여성",
         filter: ["하의", "쇼츠"],
@@ -236,12 +192,6 @@ const ITMDATA = [
         id: 7, product: "모달 실크 요가 탱크탑",
         price: "62,000원 - 78,000원",
         color: ["#eaeaec", "#f59244", "#878450", "#d7d7e7"],
-        fcolor: [
-            { id: 1, cate: "흰색", src: [] },
-            { id: 2, cate: "주황색", src: [] },
-            { id: 3, cate: "녹색", src: [] },
-            { id: 4, cate: "파란색", src: [] }
-        ],
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "탱크"],
@@ -252,18 +202,6 @@ const ITMDATA = [
         id: 8, product: "라이크 어 클라우드 브라 라이트 서포트",
         price: "55,000원 - 93,000원",
         color: ["#b27db8", "#e68d84", "#e1b3b9", "#eaeaec", "#f69045", "#352b24", "#fc757a", "#9f8967", "#f7eae7", "#d5d4e4"],
-        fcolor: [
-            { id: 1, cate: "보라색", src: [] },
-            { id: 2, cate: "주황색", src: [] },
-            { id: 3, cate: "분홍색", src: [] },
-            { id: 4, cate: "흰색", src: [] },
-            { id: 5, cate: "주황색", src: [] },
-            { id: 6, cate: "검정색", src: [] },
-            { id: 7, cate: "분홍색", src: [] },
-            { id: 8, cate: "녹색", src: [] },
-            { id: 9, cate: "흰색", src: [] },
-            { id: 10, cate: "파란색", src: [] }
-        ],
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "스포츠브라"],
@@ -274,11 +212,6 @@ const ITMDATA = [
         id: 9, product: "드라이센스 롱슬리브",
         price: "109,000원",
         color: ["#222222", "#945443", "#352b24"],
-        fcolor: [
-            { id: 1, cate: "검정색", src: [] },
-            { id: 2, cate: "주황색", src: [] },
-            { id: 3, cate: "녹색", src: [] }
-        ],
         dec: ["Lycra™", "트레이닝"],
         gender: "남성",
         filter: ["상의", "티셔츠"],
@@ -289,11 +222,6 @@ const ITMDATA = [
         id: 10, product: "프렌치 테리 오버사이즈 롱슬리브 크루",
         price: "159,000원",
         color: ["#888888", "#9f8967", "#f7eae7"],
-        fcolor: [
-            { id: 1, cate: "회색", src: [] },
-            { id: 2, cate: "녹색", src: [] },
-            { id: 3, cate: "흰색", src: [] }
-        ],
         dec: ["코튼 테리", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
@@ -304,10 +232,6 @@ const ITMDATA = [
         id: 11, product: "헤비웨이트 크레이프 하프집",
         price: "138,000원",
         color: ["#333333", "#9f8967"],
-        fcolor: [
-            { id: 1, cate: "회색", src: [] },
-            { id: 2, cate: "녹색", src: [] }
-        ],
         dec: ["코튼", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
@@ -318,12 +242,6 @@ const ITMDATA = [
         id: 12, product: "다운 포 잇 올 베스트",
         price: "138,000원",
         color: ["#f7eae7", "#333333", "#878450", "#d6d6e5"],
-        fcolor: [
-            { id: 1, cate: "흰색", src: [] },
-            { id: 2, cate: "검정색", src: [] },
-            { id: 3, cate: "녹색", src: [] },
-            { id: 4, cate: "파란색", src: [] }
-        ],
         dec: ["Glyde™", "데일리"],
         gender: "남성",
         filter: ["상의", "아우터"],

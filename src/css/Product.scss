@@ -2,29 +2,29 @@
     outline: 1px solid #f00;
 } */
 
-.Product_single {
+.Itm {
     margin: 30px 0 0 0;
 }
 
-.Product_single .inner {
+.Itm .inner {
     display: flex;
 }
 
-.Product_single .left {
+.Itm .left {
     flex: 1.8;
     padding: 0 50px 0 0;
 }
 
-.Product_single .left img {
+.Itm .left img {
     width: 100%;
 }
 
-.Product_single .right {
+.Itm .right {
     flex: 1.2;
     margin: 20px 0 0 0;
 }
 
-.Product_single .right .decription {
+.Itm .right .decription {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +44,7 @@
     color: #d41935;
 }
 
-.Product_single .right .sptitle {
+.Itm .right .sptitle {
     font-size: 30px;
     font-weight: 600;
     margin: 0 0 20px 0;

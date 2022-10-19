@@ -22,8 +22,7 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
                         {ITMDATA.map(it => {
                             return (
                                 <figure>
-                                    <img src={process.env.PUBLIC_URL + "/assets/images/s1-0" + it.id + ".jpg"} alt="" />
-
+                                    <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
                                     <div className="box">
                                         <ul className="color">
                                             {
