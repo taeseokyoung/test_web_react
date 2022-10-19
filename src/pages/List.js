@@ -40,7 +40,7 @@ const List = ({ FILTER, ITMDATA, NAVDATA }) => {
                             ITMDATA.map(it => {
                                 return (
                                     // <Link to={`/List/ + ${NAVDATA.title}`} ></Link>
-                                    <Link to={'/Itm/' + it.id}>
+                                    <Link to={'/Itm/' + it.id} key={it.id}>
                                         <div className='pImage'>
                                             <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
 

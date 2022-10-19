@@ -1,7 +1,3 @@
-/* * {
-  outline: 1px solid #f00;
-} */
-
 .Wrap {
   overflow-x: hidden;
 }
@@ -643,11 +639,6 @@ h1 {}
 
 }
 
-
-
-
-
-
 // List
 .NewProducts {
   position: relative;
@@ -784,6 +775,215 @@ h1 {}
 
 }
 
+.SubPage {
+  border-top: 1px solid rgb(51, 51, 51, 0.2);
+
+  .subNav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+
+    // border-top: 1px solid #333;
+
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 500;
+
+    }
+  }
+
+  .subMain {
+    display: flex;
+    // background: linear-gradient(217deg,
+    //     rgba(81, 66, 77, 0.5),
+    //     rgba(255, 0, 0, 0) 70.71%),
+    //   linear-gradient(127deg, rgba(188, 44, 155, 0.8),
+    //     rgba(0, 255, 0, 0) 70.71%),
+    //   linear-gradient(336deg, #c0c0ffca,
+    //     rgba(255, 255, 255, 1) 70.71%);
+    // padding: 15px;
+
+    figure {
+      width: 400px;
+      height: 300px;
+
+      &.woman01 {
+        flex: 1;
+        background: url(../../public/assets/images/woman01.jpg) no-repeat center center/cover;
+      }
+
+      &.woman02 {
+        flex: 2;
+        background: url(../../public/assets/images/woman02.jpg) no-repeat center center/cover;
+      }
+
+      &.woman03 {
+        flex: 1;
+        background: url(../../public/assets/images/woman03.jpg) no-repeat center center/cover;
+      }
+    }
+  }
+
+  .banner {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    background: #f9f9f9;
+
+    p {
+
+      line-height: 1.45;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .btn {
+
+      display: flex;
+      gap: 30px;
+      justify-content: flex-end;
+      align-items: center;
+      white-space: nowrap;
+      padding: 10px 0 0 0;
+
+
+      button {
+        display: block;
+        padding: 10px 50px;
+        background: inherit;
+
+      }
+
+    }
+  }
+
+  .best_slider {
+
+    img {
+      width: 256px;
+      margin: 0 0 10px 0;
+    }
+
+    .box {
+      .color {
+        li {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: 0 10px 10px 0;
+        }
+      }
+
+      .product {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 0 10px 0;
+      }
+
+      .price {
+        display: inline-block;
+        font-size: 15px;
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
+
+      .dec {
+        display: block;
+        font-size: 13px;
+        text-align: left;
+
+        li {
+          display: inline-block;
+          padding: 5px 10px;
+          border: 1px solid #333;
+          border-radius: 15px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+
+  .subList {
+    padding: 50px 0;
+
+    h3 {
+      font-size: 21px;
+      font-weight: 700;
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+      column-gap: 30px;
+
+      img {
+        margin: 0 0 20px 0;
+      }
+
+      .box {
+        .color {
+          li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0 10px 10px 0;
+          }
+        }
+
+        .product {
+          display: block;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: left;
+          margin: 0 0 10px 0;
+        }
+
+        .price {
+          display: inline-block;
+          font-size: 15px;
+          text-align: left;
+          margin: 0 0 20px 0;
+        }
+
+        .dec {
+          display: block;
+          font-size: 13px;
+          text-align: left;
+
+          li {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #333;
+            border-radius: 15px;
+            margin: 0 5px 0 0;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 327.5px;
+      height: 380px;
+    }
+  }
+}
 
 .tabslide .inner {
   position: relative;
