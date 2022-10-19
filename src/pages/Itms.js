@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick.css";
 
 const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
 
-    // const { itm } = useParams();
+    const { itm } = useParams();
     // const navigate = useNavigate();
     // const matchItm = ITMDATA.find(it => itm === String(it.id));
 
