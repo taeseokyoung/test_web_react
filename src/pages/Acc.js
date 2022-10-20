@@ -25,7 +25,7 @@ const Acc = ({ NAVDATA, ITMDATA }) => {
                     <figure className='acc03'></figure>
                 </div>
                 <div className="banner">
-                    <p>나의 '스웻 라이프' 를 더욱 윤택하게 만들어 줄<br />룰루레몬의 다양한 액세서리를 만나보세요.</p>
+                    <p>나의 스웻 라이프를 더욱 윤택하게 만들어 줄<br />룰루레몬의 다양한 액세서리를 만나보세요.</p>
                     <div className="btn">
                         <button className='sbtn2'>소도구 구경하기</button>
                         <button className='sbtn2'>모자 구경하기</button>

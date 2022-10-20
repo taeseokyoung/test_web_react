@@ -66,15 +66,31 @@ const Header = ({ NAVDATA }) => {
                             </form>
                         </div>
                     </div>
-                    <div className={"login " + (TG[0] ? 'on' : '')}>
+                    <div className="login">
+                        <strong>
+                            <i className="xi-user-o"></i>
+                        </strong>
+                        <ul className="login_box">
+                            <li>
+                                <Link to="/login">로그인</Link>
+                            </li>
+                            <li><Link to="/wishlist">위시리스트</Link></li>
+                        </ul>
+                    </div>
+                    {/* 클릭했을 때 나오는 메뉴 */}
+                    {/* <div className={"login " + (TG[0] ? 'on' : '')}>
                         <strong onClick={() => setTG([!TG[0], false])}><i className="xi-user-o"></i></strong>
                         <ul className="login_box">
                             <li><a href="#!">로그인</a></li>
                             <li><a href="#!">위시리스트</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="cart">
-                        <strong><i className="xi-cart-o"></i></strong>
+                        <strong>
+                            <Link to="/Cart">
+                                <i className="xi-cart-o"></i>
+                            </Link>
+                        </strong>
                     </div>
                 </div>
             </div>

@@ -3,15 +3,17 @@ import '../css/Product.scss'
 import { Link, useParams, useNavigate, NavLink } from 'react-router-dom';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
+import { useState } from 'react';
 
 
 
 
 const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
 
+    const [cart, setCart] = useState([]);
 
     const { id } = useParams();
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const matchItm = ITMDATA.find(it => id === String(it.id));
 
 
@@ -95,7 +97,19 @@ const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
                             <button className='sbtn'>바로구매</button>
                         </div>
                         <div className='spcart'>
-                            <button className='sbtn2'>장바구니</button>
+                            <button className='sbtn2' onClick={() => {
+                                setCart([
+                                    ...cart,
+                                    {
+                                        id: matchItm.id,
+                                        name: matchItm.product,
+                                        price: matchItm.price,
+                                        e: 1
+                                    }
+                                ])
+                                navigate('/Cart')
+                            }
+                            }>장바구니</button>
                             <button className='sbtn2'>위시리스트<i className='xi-heart-o'></i> </button>
                         </div>
                     </div>
