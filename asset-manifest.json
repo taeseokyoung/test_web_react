@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/test_web_react/static/css/main.2a6986c1.css",
-    "main.js": "/test_web_react/static/js/main.3f8228d1.js",
+    "main.css": "/test_web_react/static/css/main.7c98c747.css",
+    "main.js": "/test_web_react/static/js/main.7781f475.js",
+    "static/media/newMain.jpg": "/test_web_react/static/media/newMain.16ecd4369ca4d463d136.jpg",
     "static/media/main_visual02_2.jpg": "/test_web_react/static/media/main_visual02_2.d85170fb102e4c2b5763.jpg",
+    "static/media/man02.jpg": "/test_web_react/static/media/man02.d9fbc73f8a292011b5c5.jpg",
+    "static/media/acc03.jpg": "/test_web_react/static/media/acc03.4e27aa4db0cc45217567.jpg",
+    "static/media/acc02.jpg": "/test_web_react/static/media/acc02.ebdec38429d25622efd7.jpg",
+    "static/media/new02.jpg": "/test_web_react/static/media/new02.0dfb26182b2617088167.jpg",
+    "static/media/woman01.jpg": "/test_web_react/static/media/woman01.8a58bdb184e4043cd137.jpg",
+    "static/media/new01.jpg": "/test_web_react/static/media/new01.51e4bfae6cf0b9a0bac4.jpg",
     "static/media/main_visual01.jpg": "/test_web_react/static/media/main_visual01.b71bd95ef271936759e1.jpg",
+    "static/media/man01.jpg": "/test_web_react/static/media/man01.8114aa2387abf6877a2a.jpg",
     "static/media/main_visual03.jpg": "/test_web_react/static/media/main_visual03.329cc3516d77e59fa881.jpg",
+    "static/media/woman03.jpg": "/test_web_react/static/media/woman03.e2af073a5f4451a1a6a8.jpg",
+    "static/media/acc01.jpg": "/test_web_react/static/media/acc01.ce2056dab44511d42581.jpg",
+    "static/media/man03.jpg": "/test_web_react/static/media/man03.247fb1d49b640f1abbac.jpg",
+    "static/media/woman02.jpg": "/test_web_react/static/media/woman02.3e1a9f0dad9a589fe2c1.jpg",
     "index.html": "/test_web_react/index.html",
-    "main.2a6986c1.css.map": "/test_web_react/static/css/main.2a6986c1.css.map",
-    "main.3f8228d1.js.map": "/test_web_react/static/js/main.3f8228d1.js.map"
+    "main.7c98c747.css.map": "/test_web_react/static/css/main.7c98c747.css.map",
+    "main.7781f475.js.map": "/test_web_react/static/js/main.7781f475.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a6986c1.css",
-    "static/js/main.3f8228d1.js"
+    "static/css/main.7c98c747.css",
+    "static/js/main.7781f475.js"
   ]
 }
