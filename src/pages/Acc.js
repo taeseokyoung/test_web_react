@@ -1,48 +1,47 @@
+import React from 'react'
 import { Link } from 'react-router-dom';
 
-const List = ({ FILTER, ITMDATA, NAVDATA }) => {
+const Acc = ({ NAVDATA, ITMDATA }) => {
+
+    const A = ITMDATA.filter(itm => "액세서리" === itm.gender);
 
     return (
-        <section className='NewProducts'>
-            <div className='inner'>
-                <div className='left'>
-                    <div className='NPtitle'>
-                        <h3>카테고리</h3>
-                    </div>
-                    <ul className='title'>
-                        {
-                            FILTER.map(it => {
-                                return (
-                                    <li key={it.id}>{it.title}
-                                        <i className='xi-angle-down-min'></i>
-                                        <ul className='stitle'>
-                                            {
-                                                it.content.map(it => {
-                                                    return (
-                                                        <li key={it.id}>
-                                                            <input type="checkbox" />
-                                                            {it.title}
-                                                        </li>
-                                                    )
-                                                })
-                                            }
-                                        </ul>
-                                    </li>
-                                )
-                            })
-                        }
+        <section className='SubPage'>
+            <div className="inner">
+                <div className="subNav">
+                    <h2>액세서리</h2>
+                    <ul>
+                        <li>양말</li>
+                        <li>장갑</li>
+                        <li>가방</li>
+                        <li>요가용품</li>
+                        <li>헤어 액세서리</li>
+                        <li>모자</li>
                     </ul>
                 </div>
-                <div className="right">
-                    <figure className='newMain'></figure>
-                    <div className='pdList'>
+                <div className='subMain'>
+                    <figure className='acc01'></figure>
+                    <figure className='acc02'></figure>
+                    <figure className='acc03'></figure>
+                </div>
+                <div className="banner">
+                    <p>나의 '스웻 라이프' 를 더욱 윤택하게 만들어 줄<br />룰루레몬의 다양한 액세서리를 만나보세요.</p>
+                    <div className="btn">
+                        <button className='sbtn2'>소도구 구경하기</button>
+                        <button className='sbtn2'>모자 구경하기</button>
+                    </div>
+                </div>
+                {/* <Slide /> */}
+                <div className='subList'>
+                    <h3>제품 보기</h3>
+                    <div className='grid'>
                         {
-                            ITMDATA.map(it => {
-                                return (
-                                    <Link to={'/Itms/' + it.id} key={it.id}>
-                                        <div className='pImage'>
-                                            <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
+                            A.map(it => {
 
+                                return (
+                                    <Link to={'/Itms/' + it.id} key={it.id} >
+                                        <div key={it.id}>
+                                            <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
                                             <div className="box">
                                                 <ul className="color">
                                                     {
@@ -77,4 +76,4 @@ const List = ({ FILTER, ITMDATA, NAVDATA }) => {
     )
 }
 
-export default List;
+export default Acc;

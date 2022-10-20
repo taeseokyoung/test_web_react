@@ -8,6 +8,8 @@ import List from './pages/List';
 import Itms from './pages/Itms';
 // import Sub from './pages/Sub';
 import Woman from './pages/Woman';
+import Man from './pages/Man';
+import Acc from './pages/Acc';
 import { NAVDATA, FILTER, ITMDATA, FOOTDATA } from './Data'
 import './css/App.scss';
 
@@ -21,8 +23,10 @@ function App() {
         <Route path='/Woman' element={<Main NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
         <Route path='/List' element={<List FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
         {/* <Route path='/List/:category' element={<List NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} /> */}
-        <Route path='/List/여성' element={<Woman NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
-        <Route path='/Itms/:itm' element={<Itms FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
+        <Route path='/List/Woman' element={<Woman NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
+        <Route path='/List/Man' element={<Man NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
+        <Route path='/List/Acc' element={<Acc NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
+        <Route path='/Itms/:id' element={<Itms FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
       </Routes>
       <Footer FOOTDATA={FOOTDATA} />
     </Wrapper>

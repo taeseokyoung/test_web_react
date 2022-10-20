@@ -8,7 +8,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 2, title: "여성", link: "/List/여성",
+        navid: 2, title: "여성", link: "/List/Woman",
         mainsub: [
             {
                 sid: 1, stitle: "상의", slink: "#!",
@@ -27,7 +27,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 3, title: "남성", link: "/List/남성",
+        navid: 3, title: "남성", link: "/List/Man",
         mainsub: [
             {
                 sid: 1, stitle: "상의", slink: "#!",
@@ -43,7 +43,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 4, title: "액세서리", link: "/List/액세서리",
+        navid: 4, title: "액세서리", link: "/List/Acc",
         mainsub: [
             { sid: 1, stitle: "양말", slink: "#!", submenu: [] },
             { sid: 2, stitle: "장갑", slink: "#!", submenu: [] },
@@ -55,7 +55,7 @@ const NAVDATA = [
     },
 
     {
-        navid: 5, title: "커뮤니티", link: "/List/커뮤니티",
+        navid: 5, title: "커뮤니티", link: "/List/Community",
         submenu: [
             { sid: 1, stitle: "룰루레몬", slink: "#!", submenu: [] },
             { sid: 2, stitle: "앰버서더", slink: "#!", submenu: [] },
@@ -139,8 +139,8 @@ const ITMDATA = [
         img: [
             { co: "흰색", tit: ["w1", "w2", "w3", "w4", "w5"] },
             { co: "검정색", tit: ["b1", "b2", "b3", "b4", "b5"] }
-        ],
-        link: "/Itm/1"
+        ]
+
     },
 
     {
@@ -150,8 +150,7 @@ const ITMDATA = [
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
-        new: false,
-        link: "/Itm/2"
+        new: false
     },
 
     {
@@ -161,8 +160,7 @@ const ITMDATA = [
         dec: ["클래식", "골프", "테니스"],
         gender: "여성",
         filter: ["상의", "롱슬리브"],
-        new: false,
-        link: "/Itm/3"
+        new: false
     },
 
     {
@@ -172,8 +170,7 @@ const ITMDATA = [
         dec: ["Swift™", "테니스"],
         gender: "여성",
         filter: ["하의", "스커트"],
-        new: false,
-        link: "/Itm/4"
+        new: false
     },
 
     {
@@ -183,8 +180,7 @@ const ITMDATA = [
         dec: ["Everlux™", "고강도", "트레이닝"],
         gender: "여성",
         filter: ["상의", "탱크"],
-        new: true,
-        link: "/Itm/5"
+        new: true
     },
 
     {
@@ -194,8 +190,7 @@ const ITMDATA = [
         dec: ["Nulux™", "초경량", "러닝"],
         gender: "여성",
         filter: ["하의", "쇼츠"],
-        new: false,
-        link: "/Itm/6"
+        new: false
     },
 
     {
@@ -205,8 +200,7 @@ const ITMDATA = [
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "탱크"],
-        new: false,
-        link: "/Itm/7"
+        new: false
     },
 
     {
@@ -216,8 +210,7 @@ const ITMDATA = [
         dec: ["요가"],
         gender: "여성",
         filter: ["상의", "스포츠브라"],
-        new: true,
-        link: "/Itm/8"
+        new: true
     },
 
     {
@@ -227,8 +220,7 @@ const ITMDATA = [
         dec: ["Lycra™", "트레이닝"],
         gender: "남성",
         filter: ["상의", "티셔츠"],
-        new: false,
-        link: "/Itm/9"
+        new: false
     },
 
     {
@@ -238,8 +230,7 @@ const ITMDATA = [
         dec: ["코튼 테리", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
-        new: true,
-        link: "/Itm/10"
+        new: true
     },
 
     {
@@ -249,8 +240,7 @@ const ITMDATA = [
         dec: ["코튼", "데일리"],
         gender: "남성",
         filter: ["상의", "후디&스웻셔츠"],
-        new: false,
-        link: "/Itm/11"
+        new: false
     },
 
     {
@@ -260,8 +250,82 @@ const ITMDATA = [
         dec: ["Glyde™", "데일리"],
         gender: "남성",
         filter: ["상의", "아우터"],
-        new: true,
-        link: "/Itm/12"
+        new: true
+    },
+
+    {
+        id: 13, product: "시티 스웻 풀집 후디",
+        price: "159,000원",
+        color: ["#d2c0a1", "#9096bb", "#222222", "#242732", "#dbdbdb"],
+        dec: ["프렌치 테리", "데일리"],
+        gender: "남성",
+        filter: ["상의", "아우터"],
+        new: true
+    },
+
+    {
+        id: 14, product: '라이트웨이트 트레일 러닝 쇼츠 7"',
+        price: "97,000원 - 138,000원",
+        color: ["#444245", "#a4c58d"],
+        dec: ["경량", "러닝"],
+        gender: "남성",
+        filter: ["하의", "쇼츠"],
+        new: true
+    },
+
+    {
+        id: 15, product: '써지 웜 타이츠 29"',
+        price: "184,000원",
+        color: ["#222222", "#f5f5f5", "#444245"],
+        dec: ["발수", "방풍", "러닝"],
+        gender: "남성",
+        filter: ["하의", "타이즈"],
+        new: true
+    },
+    {
+        id: 16, product: '룰루레몬랩 플리스 크루 풀오버',
+        price: "184,000원",
+        color: ["#a74335", "#393939", "#ded5ca"],
+        dec: ["플리스", "기모", "데일리"],
+        gender: "남성",
+        filter: ["상의", "후디&스웻셔츠"],
+        new: true
+    },
+    {
+        id: 17, product: '요가 매트 타월 위드 그립',
+        price: "78,000원",
+        color: ["#e78d85", "#8ca9a4"],
+        dec: ["요가", "소도구"],
+        gender: "액세서리",
+        filter: ["요가용품"],
+        new: true
+    },
+    {
+        id: 18, product: '카디오 크로스 트레이너 헤드밴드',
+        price: "19,0000원",
+        color: ["#f9f9f9", "#efe2e0", "#cf9ae3", "#383130"],
+        dec: ["헤어밴드", "트레이닝"],
+        gender: "액세서리",
+        filter: ["헤어 액세서리"],
+        new: true
+    },
+    {
+        id: 19, product: '파워 스트라이드 크루 삭스 3팩',
+        price: "67,000원",
+        color: ["linear-gradient(180deg, rgba(186,178,212,1) 0%, rgba(227,227,229,1) 35%, rgba(238,155,151,1) 100%)"],
+        dec: ["양말", "트레이닝"],
+        gender: "액세서리",
+        filter: ["양말"],
+        new: true
+    },
+    {
+        id: 20, product: '런 포 잇 올 글러브',
+        price: "51,000원",
+        color: ["#f24755", "#222222"],
+        dec: ["발수", "플리스", "러닝"],
+        gender: "액세서리",
+        filter: ["장갑"],
+        new: true
     },
 ]
 

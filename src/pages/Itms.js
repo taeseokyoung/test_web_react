@@ -1,6 +1,6 @@
 import '../css/Product.scss'
-import { useEffect, useRef, useState } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+// import { useEffect, useRef, useState } from 'react';
+import { Link, useParams, useNavigate, NavLink } from 'react-router-dom';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
@@ -9,79 +9,60 @@ import "slick-carousel/slick/slick.css";
 
 const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
 
-    const { itm } = useParams();
+
+    const { id } = useParams();
     // const navigate = useNavigate();
-    // const matchItm = ITMDATA.find(it => itm === String(it.id));
+    const matchItm = ITMDATA.find(it => id === String(it.id));
 
-    const Up = {
-        arrows: true,
-        infinite: true,
-        //dots: true,
-        // fade: true,
-        slidesToShow: 1,
-    }
 
-    const Down = {
-        arrows: true,
-        infinite: true,
-        //dots: true,
-        // fade: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-    }
 
     return (
         <section className='Itm'>
             <div className='inner'>
                 <div className='left'>
-                    {/* <figure>
-                        <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
-                    </figure> */}
-                    <Slider {...Up}>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w1.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w2.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w3.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w4.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w5.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b1.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b2.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b3.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b4.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b5.jpg"} alt="" /></figure>
+                    <Slider className='big'>
+                        <figure>
+                            <img src={process.env.PUBLIC_URL + '/assets/images/s' + matchItm.id + '.jpg'} alt="" />
+                        </figure>
                     </Slider>
-                    <Slider {...Down}>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w1.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w2.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w3.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w4.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-w5.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b1.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b2.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b3.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b4.jpg"} alt="" /></figure>
-                        <figure><img src={process.env.PUBLIC_URL + "/assets/images/s1-b5.jpg"} alt="" /></figure>
-                    </Slider>
+                    {/* <ul className="slideTab">
+                        {
+                            SLIDE.map((dots, idx) => {
+                                return (
+                                    <li key={dots.id} className={idx === IDX ? " on" : ""} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.dot}</li>
+                                )
+                            })
+                        }
+                    </ul> */}
+                    {/*<div className="slideArrows">
+                        <button onClick={() => mainSlide.current.slickPrev()}><i className='xi-arrow-left'></i></button>
+                        <button onClick={() => mainSlide.current.slickNext()}><i className='xi-arrow-right'></i></button>
+                    </div> */}
+
                 </div>
                 <div className='right'>
                     <div className='decription'>
                         <ul className='Kategorie'>
-                            <li>여성</li>
-                            <li>상의</li>
-                            <li>롱슬리브</li>
+                            <li>{matchItm.gender}</li>
+                            {
+                                matchItm.filter.map((it, idx) => <li key={idx}>{it}</li>)
+                            }
                         </ul>
-                        <div className='sprice'>{ITMDATA[0].price}</div>
+                        <div className='sprice'>{matchItm.price}</div>
                     </div>
-                    <div className='sptitle'>{ITMDATA[0].product}</div>
+                    <div className='sptitle'>{matchItm.product}</div>
                     <ul className='sdec'>
-                        <li>{ITMDATA[0].dec[0]}</li>
-                        <li>{ITMDATA[0].dec[1]}</li>
-                        <li>{ITMDATA[0].dec[2]}</li>
+                        {
+                            matchItm.dec.map((it, idx) => <li key={idx}>{it}</li>)
+                        }
                     </ul>
                     <div className="choosecolor">
                         {/* <span>색상 : 화이트</span> */}
                         <ul className='scolor'>
-                            <li style={{ background: `${ITMDATA[0].color[0]}` }}></li>
-                            <li style={{ background: `${ITMDATA[0].color[1]}` }}></li>
+                            {
+                                matchItm.color.map((it, idx) => <li style={{ background: it }} key={idx}></li>)
+                            }
+                            {/* <li style={{ background: `${ITMDATA[0].color[1]}` }}></li> */}
                         </ul>
                     </div>
                     <div className='sSize'>

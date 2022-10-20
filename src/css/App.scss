@@ -422,6 +422,13 @@ h1 {}
   }
 
   .slideNum {
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+    margin: 0 -700px 0 0;
+    font-size: 20px;
+    color: #fff;
+
     span {
       font-size: 13px;
       color: #ddd;
@@ -829,6 +836,36 @@ h1 {}
       &.woman03 {
         flex: 1;
         background: url(../../public/assets/images/woman03.jpg) no-repeat center center/cover;
+      }
+
+      &.man01 {
+        flex: 1;
+        background: url(../../public/assets/images/man01.jpg) no-repeat center top/cover;
+      }
+
+      &.man02 {
+        flex: 2;
+        background: url(../../public/assets/images/man02.jpg) no-repeat center center/cover;
+      }
+
+      &.man03 {
+        flex: 1;
+        background: url(../../public/assets/images/man03.jpg) no-repeat center center/cover;
+      }
+
+      &.acc01 {
+        flex: 1;
+        background: url(../../public/assets/images/acc01.jpg) no-repeat center center/cover;
+      }
+
+      &.acc02 {
+        flex: 2;
+        background: url(../../public/assets/images/acc02.jpg) no-repeat center center/cover;
+      }
+
+      &.acc03 {
+        flex: 1;
+        background: url(../../public/assets/images/acc03.jpg) no-repeat center bottom/cover;
       }
     }
   }

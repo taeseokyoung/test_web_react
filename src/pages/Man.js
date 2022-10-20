@@ -4,42 +4,41 @@ import Slide from '../component/Slide';
 import { useState, useEffect } from 'react';
 
 
-const Woman = ({ NAVDATA, ITMDATA }) => {
+const Man = ({ NAVDATA, ITMDATA }) => {
 
-    const W = ITMDATA.filter(itm => "여성" === itm.gender);
+    const M = ITMDATA.filter(itm => "남성" === itm.gender);
 
-    const [sortList, onSortList] = useState('W');
+    const [sortList, onSortList] = useState('M');
     useEffect(() => {
-        onSortList('W');
+        onSortList('M');
     }, []);
 
-    const top = W.filter(itm => "상의" === itm.filter[0]);
-    const bottom = W.filter(itm => "하의" === itm.filter[0]);
+    const top = M.filter(itm => "상의" === itm.filter[0]);
+    const bottom = M.filter(itm => "하의" === itm.filter[0]);
 
 
     return (
         <section className='SubPage'>
             <div className="inner">
                 <div className="subNav">
-                    <h2>여성</h2>
+                    <h2>남성</h2>
                     <ul>
                         <li onClick={() => onSortList('top')}>상의</li>
                         <li onClick={() => onSortList('bottom')}>하의</li>
-                        <li>원피스&점프수트</li>
                         <li>수영복</li>
                         <li>언더웨어</li>
                     </ul>
                 </div>
                 <div className='subMain'>
-                    <figure className='woman01'></figure>
-                    <figure className='woman02'></figure>
-                    <figure className='woman03'></figure>
+                    <figure className='man01'></figure>
+                    <figure className='man02'></figure>
+                    <figure className='man03'></figure>
                 </div>
                 <div className="banner">
-                    <p>몸을 포근하게 감싸 안아주는 룰루레몬의 브라탑, 쇼츠와 함께라면<br />언제 어디서 어떤 스포츠와 함께하든지 편안함과 안정감을 느끼실 수 있습니다.</p>
+                    <p>놀라울정도로 포근하고 부드러운 Utilitech™ 소재의 팬츠는 운동과 일상의 경계를 완전히 허물어 <br />언제 어디서든 편안함과 안정감을 느끼실 수 있습니다.</p>
                     <div className="btn">
-                        <button className='sbtn2'>브라탑 구경하기</button>
-                        <button className='sbtn2'>쇼츠 구경하기</button>
+                        <button className='sbtn2'>팬츠 구경하기</button>
+                        <button className='sbtn2'>베스트 구경하기</button>
                     </div>
                 </div>
                 {/* <Slide /> */}
@@ -47,9 +46,9 @@ const Woman = ({ NAVDATA, ITMDATA }) => {
                     <h3>제품 보기</h3>
                     <div className='grid'>
                         {
-                            sortList === 'W' ? W.map(it => {
+                            sortList === 'M' ? M.map(it => {
                                 return (
-                                    <Link to={'/Itms/' + it.id} key={it.id}>
+                                    <Link to={'/Itms/' + it.id} key={it.id} >
                                         <div key={it.id}>
                                             <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
                                             <div className="box">
@@ -146,4 +145,4 @@ const Woman = ({ NAVDATA, ITMDATA }) => {
     )
 }
 
-export default Woman;
+export default Man;      
