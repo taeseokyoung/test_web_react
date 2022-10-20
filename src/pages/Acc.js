@@ -53,7 +53,7 @@ const Acc = ({ NAVDATA, ITMDATA }) => {
                                                     }
                                                 </ul>
                                                 <strong className='product'>{it.product}</strong>
-                                                <div className="price">{it.price}</div>
+                                                <div className="price"><span>{it.price.toLocaleString()}</span> 원</div>
                                                 <ul className='dec'>
                                                     {
                                                         it.dec.map((it, idx) => {

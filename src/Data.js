@@ -130,7 +130,7 @@ const FILTER = [
 const ITMDATA = [
     {
         id: 1, product: "Nulux 하프집 롱슬리브 셔츠",
-        price: "138,000원",
+        price: 138000,
         color: ["#eaeaec", "#222222"],
         dec: ["Nulux™", "고강도", "트레이닝"],
         gender: "여성",
@@ -145,7 +145,7 @@ const ITMDATA = [
 
     {
         id: 2, product: "코트 라이벌 하이라이즈 스커트 15",
-        price: "65,000원 - 93,000원",
+        price: 93000,
         color: ["#f8e8e6", "#eaeaec", "#d6d6e5", "#00223f", "#222222", "#a6005f", "#cbe89a"],
         dec: ["Swift™", "테니스"],
         gender: "여성",
@@ -155,7 +155,7 @@ const ITMDATA = [
 
     {
         id: 3, product: "퀵 드라잉 숏슬리브 폴로 셔츠",
-        price: "65,000원 - 93,000원",
+        price: 93000,
         color: ["#cbe89a", "#eaeaec", "#d6d6e5", "#222222"],
         dec: ["클래식", "골프", "테니스"],
         gender: "여성",
@@ -165,7 +165,7 @@ const ITMDATA = [
 
     {
         id: 4, product: "플리티드 라인드 하이라이즈 테니스 스커트",
-        price: "65,000원 - 93,000원",
+        price: 93000,
         color: ["#d8d2b2", "#eaeaec", "#a4999a", "#444144", "#222222", "#e78d85", "#dbb1ad", "#e1b3b9", "#acacac", "#bbdecd"],
         dec: ["Swift™", "테니스"],
         gender: "여성",
@@ -175,7 +175,7 @@ const ITMDATA = [
 
     {
         id: 5, product: "인비고레이트 트레이닝 탱크탑",
-        price: "93,000원",
+        price: 93000,
         color: ["#222222", "#9a9977", "#f14655", "#d1d884"],
         dec: ["Everlux™", "고강도", "트레이닝"],
         gender: "여성",
@@ -185,7 +185,7 @@ const ITMDATA = [
 
     {
         id: 6, product: "패스트 앤 프리 하이라이즈 쇼츠 6",
-        price: "93,000원",
+        price: 93000,
         color: ["#00213f", "#945443", "#403d41", "#222222", "#a3005e"],
         dec: ["Nulux™", "초경량", "러닝"],
         gender: "여성",
@@ -195,7 +195,7 @@ const ITMDATA = [
 
     {
         id: 7, product: "모달 실크 요가 탱크탑",
-        price: "62,000원 - 78,000원",
+        price: 78000,
         color: ["#eaeaec", "#f59244", "#878450", "#d7d7e7"],
         dec: ["요가"],
         gender: "여성",
@@ -205,7 +205,7 @@ const ITMDATA = [
 
     {
         id: 8, product: "라이크 어 클라우드 브라 라이트 서포트",
-        price: "55,000원 - 93,000원",
+        price: 93000,
         color: ["#b27db8", "#e68d84", "#e1b3b9", "#eaeaec", "#f69045", "#352b24", "#fc757a", "#9f8967", "#f7eae7", "#d5d4e4"],
         dec: ["요가"],
         gender: "여성",
@@ -215,7 +215,7 @@ const ITMDATA = [
 
     {
         id: 9, product: "드라이센스 롱슬리브",
-        price: "109,000원",
+        price: 109000,
         color: ["#222222", "#945443", "#352b24"],
         dec: ["Lycra™", "트레이닝"],
         gender: "남성",
@@ -225,7 +225,7 @@ const ITMDATA = [
 
     {
         id: 10, product: "프렌치 테리 오버사이즈 롱슬리브 크루",
-        price: "159,000원",
+        price: 159000,
         color: ["#888888", "#9f8967", "#f7eae7"],
         dec: ["코튼 테리", "데일리"],
         gender: "남성",
@@ -235,7 +235,7 @@ const ITMDATA = [
 
     {
         id: 11, product: "헤비웨이트 크레이프 하프집",
-        price: "138,000원",
+        price: 138000,
         color: ["#333333", "#9f8967"],
         dec: ["코튼", "데일리"],
         gender: "남성",
@@ -245,7 +245,7 @@ const ITMDATA = [
 
     {
         id: 12, product: "다운 포 잇 올 베스트",
-        price: "138,000원",
+        price: 138000,
         color: ["#f7eae7", "#333333", "#878450", "#d6d6e5"],
         dec: ["Glyde™", "데일리"],
         gender: "남성",
@@ -255,7 +255,7 @@ const ITMDATA = [
 
     {
         id: 13, product: "시티 스웻 풀집 후디",
-        price: "159,000원",
+        price: 159000,
         color: ["#d2c0a1", "#9096bb", "#222222", "#242732", "#dbdbdb"],
         dec: ["프렌치 테리", "데일리"],
         gender: "남성",
@@ -265,7 +265,7 @@ const ITMDATA = [
 
     {
         id: 14, product: '라이트웨이트 트레일 러닝 쇼츠 7"',
-        price: "97,000원 - 138,000원",
+        price: 138000,
         color: ["#444245", "#a4c58d"],
         dec: ["경량", "러닝"],
         gender: "남성",
@@ -275,7 +275,7 @@ const ITMDATA = [
 
     {
         id: 15, product: '써지 웜 타이츠 29"',
-        price: "184,000원",
+        price: 184000,
         color: ["#222222", "#f5f5f5", "#444245"],
         dec: ["발수", "방풍", "러닝"],
         gender: "남성",
@@ -284,7 +284,7 @@ const ITMDATA = [
     },
     {
         id: 16, product: '룰루레몬랩 플리스 크루 풀오버',
-        price: "184,000원",
+        price: 184000,
         color: ["#a74335", "#393939", "#ded5ca"],
         dec: ["플리스", "기모", "데일리"],
         gender: "남성",
@@ -293,7 +293,7 @@ const ITMDATA = [
     },
     {
         id: 17, product: '요가 매트 타월 위드 그립',
-        price: "78,000원",
+        price: 78000,
         color: ["#e78d85", "#8ca9a4"],
         dec: ["요가", "소도구"],
         gender: "액세서리",
@@ -302,7 +302,7 @@ const ITMDATA = [
     },
     {
         id: 18, product: '카디오 크로스 트레이너 헤드밴드',
-        price: "19,0000원",
+        price: 190000,
         color: ["#f9f9f9", "#efe2e0", "#cf9ae3", "#383130"],
         dec: ["헤어밴드", "트레이닝"],
         gender: "액세서리",
@@ -311,7 +311,7 @@ const ITMDATA = [
     },
     {
         id: 19, product: '파워 스트라이드 크루 삭스 3팩',
-        price: "67,000원",
+        price: 67000,
         color: ["linear-gradient(180deg, rgba(186,178,212,1) 0%, rgba(227,227,229,1) 35%, rgba(238,155,151,1) 100%)"],
         dec: ["양말", "트레이닝"],
         gender: "액세서리",
@@ -320,7 +320,7 @@ const ITMDATA = [
     },
     {
         id: 20, product: '런 포 잇 올 글러브',
-        price: "51,000원",
+        price: 51000,
         color: ["#f24755", "#222222"],
         dec: ["발수", "플리스", "러닝"],
         gender: "액세서리",

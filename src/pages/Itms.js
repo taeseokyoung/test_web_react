@@ -50,7 +50,7 @@ const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
                                 matchItm.filter.map((it, idx) => <li key={idx}>{it}</li>)
                             }
                         </ul>
-                        <div className='sprice'>{matchItm.price}</div>
+                        <div className="sprice"><span>{matchItm.price.toLocaleString()}</span> 원</div>
                     </div>
                     <div className='sptitle'>{matchItm.product}</div>
                     <ul className='sdec'>
@@ -110,7 +110,7 @@ const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
                                 navigate('/Cart')
                             }
                             }>장바구니</button>
-                            <button className='sbtn2'>위시리스트<i className='xi-heart-o'></i> </button>
+                            <button className='sbtn2'>위시리스트<i className='xi-heart-o'></i></button>
                         </div>
                     </div>
                     <ul className='sDetail'>

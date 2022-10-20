@@ -30,13 +30,13 @@ const Cart = () => {
                                 return (
                                     <tr key={idx}>
                                         <td className="box" style={{ width: '10rem' }}>
-                                            <Link to={'/Itms/' + it.id}><img src={it.src} alt="" /></Link>
+                                            <Link to={'/Itms/' + it.id}> <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" /></Link>
                                         </td>
                                         <td className='name' style={{ width: '30rem' }}>
                                             <Link to={'/Itms/' + it.id}>{it.name} </Link>
                                         </td>
                                         <td className='des'>
-                                            <Link to={'/Itms/' + it.id}>{it.des.substring(0, 200)} ...</Link></td>
+                                            <Link to={'/Itms/' + it.id}>{it.dec} ...</Link></td>
                                         <td className='price' style={{ width: '15rem' }}><span>{it.price.toLocaleString()}</span> 원</td>
                                     </tr>
                                 )

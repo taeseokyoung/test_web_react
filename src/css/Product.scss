@@ -1,12 +1,10 @@
 .Itm {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 
-
     .inner {
         display: flex;
         flex-direction: row;
         margin: 70px auto;
-
     }
 
     .left {
@@ -34,62 +32,53 @@
 
     .right {
         flex: 0.4;
+        margin: 20px 0 0 0;
+
+        .decription {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 0 20px 0;
+
+            .Kategorie {
+                display: flex;
+                gap: 10px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .sprice {
+                font-size: 17px;
+                font-weight: 600;
+                color: #d41935;
+            }
+        }
+
+        .sptitle {
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0 0 20px 0;
+        }
+
+        .sdec {
+            display: block;
+            font-size: 13px;
+            text-align: left;
+            margin: 0 0 20px 0;
+
+            li {
+                display: inline-block;
+                padding: 5px 10px;
+                border: 1px solid #333;
+                border-radius: 15px;
+                margin: 0 10px 0 0;
+            }
+        }
     }
 }
 
 
 
-.Itm .left {}
-
-.Itm .left img {
-    width: 100%;
-}
-
-.Itm .right {
-
-    margin: 20px 0 0 0;
-}
-
-.Itm .right .decription {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 0 20px 0;
-}
-
-.decription .Kategorie {
-    display: flex;
-    gap: 10px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.decription .sprice {
-    font-size: 17px;
-    font-weight: 600;
-    color: #d41935;
-}
-
-.Itm .right .sptitle {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-}
-
-.sdec {
-    display: block;
-    font-size: 13px;
-    text-align: left;
-    margin: 0 0 20px 0;
-}
-
-.sdec>li {
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid #333;
-    border-radius: 15px;
-    margin: 0 10px 0 0;
-}
 
 .choosecolor span {
     font-size: 12px;
@@ -98,20 +87,21 @@
 
 .scolor {
     margin: 0 0 100px 0;
+
+    li {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin: 10px 5px 0 0;
+        background: #333;
+
+        &:hover {
+            border: 2px solid #d41935;
+        }
+    }
 }
 
-.scolor>li {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 10px 5px 0 0;
-    background: #333;
-}
-
-.scolor>li:hover {
-    border: 2px solid #d41935;
-}
 
 .sSize {
     display: flex;
