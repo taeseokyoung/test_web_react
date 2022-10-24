@@ -31,7 +31,7 @@ const MainVisual = () => {
                                 <div className="inner">
                                     <div className="des">{slide.des}</div>
                                     <p className="tit">{slide.title}</p>
-                                    <a href={slide.link} className="cbtn" target="_blank" >VIEW MORE</a>
+                                    <a href="#!" className="cbtn" target="_blank" >VIEW MORE</a>
                                 </div>
                             </figure>
                         )

@@ -8,9 +8,9 @@ import { useState } from 'react';
 
 
 
-const Itms = ({ NAVDATA, FILTER, ITMDATA }) => {
+const Itms = ({ NAVDATA, FILTER, ITMDATA, setCart, cart }) => {
 
-    const [cart, setCart] = useState([]);
+    // const [cart, setCart] = useState([]);
 
     const { id } = useParams();
     const navigate = useNavigate();

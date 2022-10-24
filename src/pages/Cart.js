@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 import { HiOutlineHome } from "react-icons/hi";
 
 
-const Cart = () => {
-
-    const [cart, setCart] = useState([]);
+const Cart = ({ cart, setCart }) => {
 
     useEffect(() => {
         setCart(cart.filter((itm, idx, arry) => idx === arry.findIndex(it => it.id === itm.id)))

@@ -36,8 +36,9 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
                             {W.map(it => {
                                 return (
                                     <figure key={it.id}>
-                                        <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
-
+                                        <a href={'test_web_react/Itms/' + it.id} target="_blank">
+                                            <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
+                                        </a>
                                         <div className="box">
                                             <ul className="color">
                                                 {
@@ -68,8 +69,9 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
                             {M.map(it => {
                                 return (
                                     <figure key={it.id}>
-                                        <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
-
+                                        <a href="">
+                                            <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
+                                        </a>
                                         <div className="box">
                                             <ul className="color">
                                                 {

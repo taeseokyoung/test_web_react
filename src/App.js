@@ -15,9 +15,11 @@ import Acc from './pages/Acc';
 import Cart from './pages/Cart';
 import { NAVDATA, FILTER, ITMDATA, FOOTDATA } from './Data'
 import './css/App.scss';
+import { useState } from 'react';
 
 function App() {
 
+  const [cart, setCart] = useState([]);
   return (
     <Wrapper>
       <TopBanner />
@@ -30,8 +32,8 @@ function App() {
         <Route path='/List/Woman' element={<Woman NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
         <Route path='/List/Man' element={<Man NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
         <Route path='/List/Acc' element={<Acc NAVDATA={NAVDATA} ITMDATA={ITMDATA} />} />
-        <Route path='/Itms/:id' element={<Itms FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
-        <Route path='/Cart' element={<Cart FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} />} />
+        <Route path='/Itms/:id' element={<Itms FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} cart={cart} setCart={setCart} />} />
+        <Route path='/Cart' element={<Cart FILTER={FILTER} ITMDATA={ITMDATA} NAVDATA={NAVDATA} cart={cart} setCart={setCart} />} />
       </Routes>
       <Footer FOOTDATA={FOOTDATA} />
     </Wrapper>
