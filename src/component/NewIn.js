@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 
@@ -27,9 +28,9 @@ const BestProduct = ({ ITMDATA, NAVDATA }) => {
                         {NEW.map(it => {
                             return (
                                 <figure key={it.id}>
-                                    <a href={'test_web_react/Itms/' + it.id} target="_blank">
+                                    <Link to={'/Itms/' + it.id}>
                                         <img src={process.env.PUBLIC_URL + "/assets/images/s" + it.id + ".jpg"} alt="" />
-                                    </a>
+                                    </Link>
                                     <div className="box">
                                         <ul className="color">
                                             {
